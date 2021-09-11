@@ -2,9 +2,9 @@
 /* All comments go between the front slash and asterisk symbols */
 
 body {
-	background-color:#5BD1EF;   /* background color */
+	background-color:#16a1f1;   /* background color */
 	color: #FFFFFF;          /* text color for the entire page */
-	font-size: 18px;
+	font-size: 20px;
 	font-family: Verdana, Geneva, sans-serif;
 }
 
@@ -22,12 +22,12 @@ h1, h2 {
 .stepTitle{
 	padding:4px;
 	text-align:left;
-	font-size:20px;
+	font-size:24px;
 	background-color:#2A14E1
  }
 
 .stepContent{ 
-	background-color: #EC9A9B;
+	background-color: #07b267;
 	padding:7px;
 	display: flex;
 	justify-content: center;
@@ -43,6 +43,17 @@ h1, h2 {
 	padding:5px;
 	text-align: center;
 	align-items: center
+}
+
+.warning {
+        background-color: #FBB8C4;
+        padding:10px;
+        border-radius:20px;
+    }
+
+.material-icons {
+    color:red; 
+    font-size:3em;
 }
 
 
