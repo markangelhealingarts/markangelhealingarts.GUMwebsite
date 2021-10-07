@@ -18,6 +18,11 @@ $( function() {
          $("#feedback").html("Chest Pain and Cardiovascular Disease");
       }
 
+      if ($(this).attr("id") == "Belly Fat") {
+         $("#feedback").css("color","pink");
+         $("#feedback").html("Belly Fat and Obesity");
+      }
+
   $("#feedback").css("backgroundColor","yellow");
 $('#myModal').modal("show");
    });
