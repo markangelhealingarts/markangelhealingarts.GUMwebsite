@@ -19,7 +19,7 @@ $( function() {
       }
 
       if ($(this).attr("id") == "Belly Fat") {
-         $("#feedback").css("color","pink");
+         $("#feedback").css("color","black");
          $("#feedback").html("Belly Fat and Obesity");
       }
 
