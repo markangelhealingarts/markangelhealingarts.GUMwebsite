@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pain Body</title>
+<link href="css/pain.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/pain.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">       
+ <h2>Where Does it Hurt After Sitting Too Much?</h2>
+ <h3> Click on it! </h3>
+ <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel"> 
+           Feedback
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div id="feedback"></div>
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+ <img src="img/color_body.jpg" alt="Body Map" width="550" height="620" usemap="#Map"/>
+ <map name="Map">
+   <area id="Back Pain" shape="poly" coords="460,122,469,132,467,137,477,168,469,194,460,214,453,237,454,257,455,277,461,285,467,302" href="#" alt="Back Pain" title="Back Pain">
+   <area id="Neck Pain" shape="poly" coords="452,83,446,92,446,100,447,110,454,116,456,118" href="#" alt="Neck Pain" title="Neck Pain">
+   <area id="Chest Pain" shape="poly" coords="228,198,199,204,165,206,137,201,128,187,116,183,116,167,116,163,105,187,99,185,92,174,97,147,114,130,126,130,140,122,156,114,163,118,184,121,207,122,217,128,234,132,253,142,261,163,263,185,233,195,230,170" href="#" alt="Chest Pain" title="Chest Pain">
+ </map>
+<br /><br />
+  <div style="font-size:10px">Image Courtesy of the University of Texas Libraries, The University of Texas at Austin.</div><br /> 
+</div><!--closing wrapper-->
+
+</body>
+</html>
