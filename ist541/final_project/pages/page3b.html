@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Knowledge Check</title>
+	<link href="../css/final.css" rel="stylesheet" type="text/css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+<script>
+ 
+$(function(){
+ $("#option1").click( function(){
+         $("#feedback").html("<h2 style='color:pink'> Even a little standing is better than non, but five minutes an hour is not really enough to get optimal benefits. </h2>");
+                  $("#stand").css("display","none");
+});
+$("#option3").click( function(){
+                 $("#feedback").html("<h2 style='color:green'> Correct! It is beneficial to stand about half of your time at your desk.</h2>");
+                 $("#stand").css("display","inline");
+});
+ $("#option2, #option4").click( function(){
+             $("#feedback").html("<h2 style='color:pink'> Sitting too much or standing too much can cause damage to your body </h2>");
+    $("#stand").css("display","none");
+});
+
+});
+
+</script>
+</head>
+
+<body>
+	
+<div id="wrapper">
+<h1>How much time should one try to work up to standing when at their desk?</h1>
+	<br><hr><br>
+	<center>
+	<a href="page3.html">  _How Much?_ </a>
+	</center>
+	<br><hr><br>
+	<center>
+<h3>Click on one of the following choices</h3>
+ </center>
+<h2 id="option1" class="choices"> Five minutes per hour </h2>
+<h2 id="option2" class="choices"> 10 minutes per hour </h2>
+<h2 id="option3" class="choices"> 30 minutes per hour </h2>
+<h2 id="option4" class="choices"> All the time </h2>
+ 
+<div id="feedback"></div>
+	<center>
+<img id="stand" src="../img/stand.jpg" />
+	</center>
+</div>
+
+</body>
+</html>
