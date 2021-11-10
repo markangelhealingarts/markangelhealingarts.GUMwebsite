@@ -28,7 +28,7 @@ body {
 }
 
 .whiteTxt {
-	color:rgba black;
+	color: rgba(0,0,0,1.00);
 	white-space: pre-line;
 }
 
