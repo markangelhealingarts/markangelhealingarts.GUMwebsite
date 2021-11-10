@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="../img/newLogoNoText.png">
+    <title>Get Up and Move!</title>
+    <link rel='stylesheet' type='text/css' href='../css/app.css'>
+		<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Firestore-->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script> -->
+    <!--Firestore-->
+  </head><nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top specialfont">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container-fluid">
+      <div class="nav navbar-left">
+        <img src="../img/newLogoNoText.png" width="50px" height="50px"/>
+        <a href="/" class="navbar-brand" id="titlenav">&nbsp;Get Up and Move</a>
+      </div>
+      <ul class="nav navbar-nav " style="font-family: Lucida Console, Courier New, monospace;">
+        <li><a href="/">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Other
+          </a>
+          <div class="dropdown-menu specialfont" aria-labelledby="navbarDropdown" style="font-weight: bold !important;">
+            <a class="dropdown-item" href="/videos/">Teaching and Guiding Videos</a>
+            <a class="dropdown-item" href="/tidbits">Tidbits Blog</a>
+            <a class="dropdown-item" href="/donate">Donate</a>
+            <a class="dropdown-item" href="/further-reading">Further Reading</a>
+            <a class="dropdown-item" href="/sources">Sources</a>
+          </div>
+        </li>
+      </ul>
+  </div>
+</nav><br>
+<br>
+<br>
+<body>
+    <div class="container-fluid banner specialfont">
+        <div class="col-md-10 offset-md-1 info" style="box-shadow: 0 0 0 2pt white !important;">
+            <h1 class="whiteTxt">
+            </h1>
+
+            <div class="row">
+                <div class="col-md whiteTxt" >
+                    <a href="https://venmo.com/mark-angel-13" target="_blank">
+                        <img src="../img/venmo.png" width=33% style="box-shadow: 0 0 0 2pt white !important;"/>
+                    </a><br>
+                    Venmo
+                </div>
+                <div class="col-md whiteTxt">
+                    <form action="https://www.paypal.com/donate" method="post" target="_top">
+                        <input type="image" src="../img/paypal.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" style="box-shadow: 0 0 0 2pt white !important;"/>
+                        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                        <input type="hidden" name="business" value="2P763EY3S58N6" />
+                        Paypal
+                        <input type="hidden" name="item_name" value="Health Education" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md whiteTxt">
+                    <a data-toggle="modal" data-target="#creditCardModal" href="#">
+                        <img src="../img/creditcard.png" width="20%" style="box-shadow: 0 0 0 2pt white !important;"/>
+                    </a>
+                    <!-- Credit Card Modal -->
+                    <div class="modal fade" id="creditCardModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: black">Credit Card</h5>
+                                </div>
+                                <div class="modal-body" style="text-align: left; color: black">
+                                    Credit Card donation method coming soon!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    Credit Card
+                </div>
+                <div class="col-md whiteTxt">
+                    <a data-toggle="modal" data-target="#chequeModal" href="#">
+                        <img src="../img/cheque.png" width="20%" style="box-shadow: 0 0 0 2pt white !important;"/>
+                    </a>
+                    <!-- Cheque Modal -->
+                    <div class="modal fade" id="chequeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle" style="color: black">Cheque</h5>
+                                </div>
+                                <div class="modal-body" style="text-align: left; color: black">
+                                    Contact Mark Angel for further information!
+                                    Email Mark: <br> <a href="mailto: @markangelhealingarts@gmail.com">markangelhealingarts@gmail.com</a>
+                                    Call Mark: <br> <a href="tel:831-334-4944">831.334.4944</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    Send a cheque
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+
+
+<!--</body>-->
+</html>

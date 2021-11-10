@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="../img/newLogoNoText.png">
+    <title>Get Up and Move!</title>
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+		<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type='text/css' href="../css/styles.css">
+    <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Firestore-->
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script> -->
+    <!--Firestore-->
+  </head>  <nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top specialfont">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="container-fluid">
+      <div class="nav navbar-left">
+        <img src="../img/newLogoNoText.png" width="50px" height="50px"/>
+        <a href="/" class="navbar-brand" id="titlenav">&nbsp;Get Up and Move</a>
+      </div>
+      <ul class="nav navbar-nav " style="font-family: Lucida Console, Courier New, monospace;">
+        <li><a href="/">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Other
+          </a>
+          <div class="dropdown-menu specialfont" aria-labelledby="navbarDropdown" style="font-weight: bold !important;">
+            <a class="dropdown-item" href="/videos/">Teaching and Guiding Videos</a>
+            <a class="dropdown-item" href="/tidbits">Tidbits Blog</a>
+            <a class="dropdown-item" href="/donate">Donate</a>
+            <a class="dropdown-item" href="/further-reading">Further Reading</a>
+            <a class="dropdown-item" href="/sources">Sources</a>
+          </div>
+        </li>
+      </ul>
+  </div>
+</nav>    <br>
+    <br>
+    <br>
+
+    <body>
+      <div class="container-fluid banner">
+        <div class="col-md-10 offset-md-1 info" style="background-color:#16A1f1;">
+          <h1 class="whiteTxt specialfont">Get Up and Move Videos</h1>
+          <h2 class="whiteTxt specialfont">Please take the Get Up and Move Orientation Course <a href="https://itcdland.csumb.edu/~mangel/IST526/h5p-player/apps/gum.html" style="color: blue !important;">HERE</a> to learn how to best use this program on the website and app</h2>
+          <h2 class="specialfont">
+            <div class="row">
+              <div class="col-sm whiteTxt specialfont">Each of the following activities is demonstrated at three levels of intensity based on a participants
+                general physical capabilities: Inactive, Moderate, Vigorous
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#disclaimer">
+                  Disclaimer
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="disclaimer" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Disclaimer!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body" style="white-space: pre-line; text-align: left;">
+                        <b>Fitness and Exercise Disclaimer</b>
+
+                        The purpose of this DISCLAIMER AND NOTICE is to make you aware of the potential risks connected
+                        with activity in any exercise, physical fitness or training program. It is also to help you make
+                        an informed decision as to whether or not you should participate in Get Up and Move! and the
+                        activities associated with it.
+                        DISCLAIMER OF LIABILITY. Injuries of all types can occur when participating in exercise,
+                        physical
+                        fitness and training programs, hence Get Up and Move! strongly encourages all users to obtain a
+                        comprehensive physical examination by a licensed physician BEFORE undertaking any exercise or
+                        training demonstrated on this website, and/or any of videos, MP4s, MP3s and training materials
+                        offered on this website. If you choose to participate in any of the Get Up and Move! program or
+                        any associated program, you fully assume the risk of any resulting injury.
+                        Such injuries include but are not limited to:
+                        Bruising, cuts and general
+                        soreness
+
+                        Muscle and tendon injuries
+                        Ligament and skeletal injuries
+                        Fractured or broken bones
+                        Concussions
+                        Heart attack
+
+                        GET UP AND MOVE DISCLAIMS ANY LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES AND ASSUMES NO
+                        LIABILITY OR RESPONSIBILITY FOR ANY LOSS, INJURY OR DAMAGE SUFFERED BY ANY PERSON AS A RESULT OF
+                        THE USE OR MISUSE OF ANY INFORMATION, VIDEOS, MPSs OR TRAINING MATERIALS MADE AVAILABLE ON THIS
+                        WEBSITE.
+                        In consideration of performing or participating in these types of activities, you hereby agree
+                        to
+                        indemnify and hold harmless Mark C. Angel and other associated with developing the Get Up and
+                        Move! program, and its officers, directors, and agents, and their respective successors and
+                        assigns, against any loss, liability, damage, cause of action, cost, or expense of any nature
+                        whatsoever, including without limitation reasonable attorneys’ fees and other legal costs, even
+                        if
+                        said injuries or losses are the direct result of our negligence.
+                        The content, information, videos, MP4s, MP3s and training materials offered and made available
+                        on
+                        this website are for informational purposes only.
+                        USE THIS PROGRAM AND ALL INFORMATION CONTAINED WITHIN IT AT YOUR OWN RISK
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="whiteTxt"> Please take the onboarding survey <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_8mwDR330BI3AFIwHFDoEz4ic2qCF2uzLG0qWg5jhZT_maw/viewform?embedded=true"
+                style="color: blue !important;">here!</a> You only need to take it once!</h2>
+                
+            <div class="row">
+              <div class="col-md whiteTxt">
+                <h1 class="specialfont">Guiding Videos</h1>
+                <div class="row"><a href="/videos/guiding/1" class="pillbtn">
+                    <h2><b>Level 1</b></h2>
+                  </a></div>
+                <div class="row"><a href="/videos/guiding/2" class="pillbtn">
+                    <h2><b>Level 2</b></h2>
+                  </a></div>
+                <div class="row"><a href="/videos/guiding/3" class="pillbtn">
+                    <h2><b>Level 3</b></h2>
+                  </a></div>
+              </div>
+              <div class="col-md">
+                <h2 class="specialfont whiteTxt">Please Take the Weekly Survey</h2>
+                <h4 class="specialfont whiteTxt">
+                  This will help in improving your experience!
+                </h4>
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdon4GSv5gNU1GOUukrR1BZ7F4I4Tg0cU0hxtG0laHBAlC17w/viewform?embedded=true"
+                  width="640" height="624" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              </div>
+              <div class="col-md whiteTxt">
+                <h1 class="specialfont whiteTxt">Teaching Videos</h1>
+                <div class="row"><a href="/videos/teaching/1" class="pillbtn">
+                    <h2><b>Level 1</b></h2>
+                  </a></div>
+                <div class="row"><a href="/videos/teaching/2" class="pillbtn">
+                    <h2><b>Level 2</b></h2>
+                  </a></div>
+                <div class="row"><a href="/videos/teaching/3" class="pillbtn">
+                    <h2><b>Level 3</b></h2>
+                  </a></div>
+              </div>
+            </div>
+            <div class="row">
+              <br>
+            </div>
+          </h2>
+        </div>
+      </div>
+    </body>
+
+    <script>
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+
+      $(document).on('click', '#qiscattering', function () {
+        $('#qiscatteringdesc').modal('show');
+      })
+
+      $(document).on('click', '#powerexercises', function () {
+        $('#powerexercisedesc').modal('show');
+      })
+
+      $(document).on('click', '#healingsounds', function () {
+        $('#healingsoundsdesc').modal('show');
+      })
+
+      $(document).on('click', '#taoistfive', function () {
+        $('#taoistfivedesc').modal('show');
+      })
+
+      $(document).on('click', '#quantumfoam', function () {
+        $('#quantumfoamdesc').modal('show');
+      })
+
+      $(document).on('click', '#goldenball', function () {
+        $('#goldenballdesc').modal('show');
+      })
+    </script>
+    <!--</body>-->
+</html>
