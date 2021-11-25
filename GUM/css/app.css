@@ -132,4 +132,60 @@ body {
 	float: left;
 	background: #555;
 }
-cla
+/*all of the following code is just for the "How to Get Up and Move" page link*/
+ body {
+	background-color:#16a1f1;   /* background color */
+	color: #FFFFFF;          /* text color for the entire page */
+	font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+}
+
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width:900px;
+	margin:0 auto;    /* centers wrapper */
+}
+
+/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+.stepTitle{
+	padding:4px;
+	text-align:left;
+	font-size:24px;
+	background-color:#16a1f1
+ }
+
+.stepContent{ 
+	background-color: #07b267;
+	padding:7px;
+	display: flex;
+	justify-content: center;
+}
+
+.stepDescription {
+	width:55%;
+	padding:5px;
+}
+
+.stepImage {
+	width:40%;	
+	padding:5px;
+	text-align: center;
+	align-items: center
+}
+
+.warning {
+        background-color: #FBB8C4;
+        padding:10px;
+        border-radius:20px;
+    }
+
+.material-icons {
+    color:red; 
+    font-size:3em;
+}
+
+
