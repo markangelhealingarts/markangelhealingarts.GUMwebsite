@@ -193,12 +193,16 @@ h2 {
 }
 
 .warning {
-	background-color: #FBB8C4;
-	padding: 10px;
-	border-radius: 20px;
-}
+        background-color: #FBB8C4;
+        padding:10px;
+        border-radius:20px;
+    }
 
 .material-icons {
-	color: red;
-	font-size: 3em;
+    color:red; 
+    font-size:3em;
+}
+
+.card-body {
+	background-color: #16a1f1;
 }
