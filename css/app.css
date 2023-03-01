@@ -184,8 +184,18 @@ h1, h2 {
     }
 
 .material-icons {
+<<<<<<< Updated upstream
     color:red; 
     font-size:3em;
 }
 
 
+=======
+	color: red;
+	font-size: 3em;
+}
+
+.card-body {
+	background-color: #16a1f1;
+}
+>>>>>>> Stashed changes
