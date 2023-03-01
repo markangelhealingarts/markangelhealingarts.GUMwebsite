@@ -1,21 +1,26 @@
 /* Makes it so that clicked links don't become BLUE  https://stackoverflow.com/questions/6722467/how-to-remove-the-default-link-color-of-the-html-hyperlink-a-tag*/
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
 	text-decoration: none !important;
 	color: inherit !important;
 }
 
 .externalLink {
 	text-decoration: underline !important;
-	color:blue !important;
+	color: blue !important;
 }
 
 body {
-	background-color:#22a3f7 !important; /* #16A1f1*/
+	background-color: #fff !important;
+	/* #16A1f1*/
 	background-repeat: no-repeat;
 	background-size: 50%;
 	background-position-x: center;
 	background-position-y: center;
 	background-attachment: fixed;
+	color: #000;
 	/* font-family: 'Courier New', monospace !important; */
 }
 
@@ -28,24 +33,25 @@ body {
 }
 
 .whiteTxt {
-	color: rgba(0,0,0,1.00);
+	color: rgba(0, 0, 0, 1.00);
 	white-space: pre-line;
 }
 
-.banner .navbar{
-	margin-top:4%;
+.banner .navbar {
+	margin-top: 4%;
 }
 
-.banner .navbar-brand{
+.banner .navbar-brand {
 	color: rgb(0, 0, 0);
-	font-size:1.8em;
+	font-size: 1.8em;
 	font-weight: 700;
 	margin-left: 10%;
 }
 
 .navbar {
-   	background-color: rgb(7, 178, 103); /* rgb(80, 200, 120) */
-    color: #ffffff;
+	background-color: rgb(7, 178, 103);
+	/* rgb(80, 200, 120) */
+	color: #ffffff;
 }
 
 .navbar-nav {
@@ -53,14 +59,14 @@ body {
 	font-weight: bold;
 }
 
-.navbar-custom { 
-    background-image: linear-gradient(to left, #22a3f7, rgb(7, 178, 103));
+.navbar-custom {
+	background-image: linear-gradient(to left, #22a3f7, rgb(7, 178, 103));
 	border-bottom: 2px solid rgb(255, 255, 130) !important;
 }
 
 .info {
 	text-align: center;
-	background-color:#22a3f7;
+	background-color: #fff;
 }
 
 .grid-container {
@@ -70,7 +76,7 @@ body {
 }
 
 #test {
-    color:red;
+	color: red;
 }
 
 #titlenav {
@@ -86,10 +92,12 @@ body {
 	background: rgb(253, 101, 0);
 	border-radius: 50%;
 }
+
 /* https://www.w3schools.com/howto/howto_css_pill_button.asp */
 .pillbtn {
 	background-color: rgb(7, 178, 103);
-	border: none; /* used to be none */
+	border: none;
+	/* used to be none */
 	width: 80%;
 	height: 75%;
 	padding: 10px 20px;
@@ -103,7 +111,8 @@ body {
 }
 
 .pillbtn:hover {
-	box-shadow: 0 0 0 2pt white !important; /* box shadow https://stackoverflow.com/questions/5394116/outline-radius */
+	box-shadow: 0 0 0 2pt white !important;
+	/* box shadow https://stackoverflow.com/questions/5394116/outline-radius */
 }
 
 .sessiontitle {
@@ -132,60 +141,64 @@ body {
 	float: left;
 	background: #555;
 }
+
 /*all of the following code is just for the "How to Get Up and Move" page link*/
- body {
-	background-color:#16a1f1;   /* background color */
-	color: #FFFFFF;          /* text color for the entire page */
+body {
+	background-color: #fff;
+	/* background color */
+	color: #FFFFFF;
+	/* text color for the entire page */
 	font-size: 20px;
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-h1, h2 { 
-	text-align:center;     /* centers h1 and h2 content */
+h1,
+h2 {
+	text-align: center;
+	/* centers h1 and h2 content */
 }
 
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
-	width:900px;
-	margin:0 auto;    /* centers wrapper */
+	width: 900px;
+	margin: 0 auto;
+	/* centers wrapper */
 }
 
 /* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
-.stepTitle{
-	padding:4px;
-	text-align:left;
-	font-size:24px;
-	background-color:#16a1f1
- }
+.stepTitle {
+	padding: 4px;
+	text-align: left;
+	font-size: 24px;
+	background-color: #16a1f1
+}
 
-.stepContent{ 
+.stepContent {
 	background-color: #07b267;
-	padding:7px;
+	padding: 7px;
 	display: flex;
 	justify-content: center;
 }
 
 .stepDescription {
-	width:55%;
-	padding:5px;
+	width: 55%;
+	padding: 5px;
 }
 
 .stepImage {
-	width:40%;	
-	padding:5px;
+	width: 40%;
+	padding: 5px;
 	text-align: center;
 	align-items: center
 }
 
 .warning {
-        background-color: #FBB8C4;
-        padding:10px;
-        border-radius:20px;
-    }
-
-.material-icons {
-    color:red; 
-    font-size:3em;
+	background-color: #FBB8C4;
+	padding: 10px;
+	border-radius: 20px;
 }
 
-
+.material-icons {
+	color: red;
+	font-size: 3em;
+}
