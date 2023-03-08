@@ -1,10 +1,7 @@
 /* Makes it so that clicked links don't become BLUE  https://stackoverflow.com/questions/6722467/how-to-remove-the-default-link-color-of-the-html-hyperlink-a-tag*/
-a,
-a:hover,
-a:focus,
-a:active {
+#titlenav {
 	text-decoration: none !important;
-	color: inherit !important;
+	color: #000;
 }
 
 .externalLink {
@@ -13,15 +10,15 @@ a:active {
 }
 
 body {
-	background-color: #fff !important;
-	/* #16A1f1*/
-	background-repeat: no-repeat;
-	background-size: 50%;
-	background-position-x: center;
-	background-position-y: center;
-	background-attachment: fixed;
+	background-color: #fff;
 	color: #000;
 	/* font-family: 'Courier New', monospace !important; */
+}
+
+.links {
+	font-size: 15px;
+	text-decoration: none;
+	color: #000;
 }
 
 /* 
