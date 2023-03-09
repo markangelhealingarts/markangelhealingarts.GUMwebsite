@@ -5,71 +5,141 @@
 <head>
     <link rel="icon" href="img/newLogoNoText.png">
     <title>Get Up and Move!</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script src="js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!--Firestore-->
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script> -->
-    <!--Firestore-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
-<nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top specialfont">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="container-fluid">
-        <div class="nav navbar-left">
-            <img src="img/newLogoNoText.png" width="50px" height="50px" />
-            <a href="index.html" class="navbar-brand" id="titlenav">&nbsp;Get Up and Move</a>
-        </div>
-        <ul class="nav navbar-nav " style="font-family: Lucida Console, Courier New, monospace;">
-            <li><a href="index.html">Home</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Pages
-                </a>
-                <div class="dropdown-menu specialfont" aria-labelledby="navbarDropdown"
-                    style="font-weight: bold !important;">
-                    <a class="dropdown-item" href="pages/activities.html">Start Moving!</a>
-                    <a class="dropdown-item" href="pages/tidbits.html">Tidbits</a>
-                    <a class="dropdown-item" href="pages/donate.html">Donate</a>
-                    <a class="dropdown-item" href="https://www.markangelhealingarts.com/"
-                        target="_blank">markangelhealingarts.com</a>
-                    <a class="dropdown-item" href="pages/sources.html">Sources</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav><br>
-<br>
-<br>
+
 
 <body>
-    <div class="container-fluid banner">
-        <div class="info"> <!-- "background-color:#1e9ad6;" -->
-            <!-- <h1 class="whiteTxt">Welcome to Get Up and Move!</h1> -->
-            <h4>
+    <div class="navbar navbar-expand-lg navbar-fixed-top">
+        <div id="logo">
+            <a href="index.html"><img src="img/newLogoNoText.png" width="50px" height="50px" /></a>
+            <a href="index.html" class="navbar-brand" id="titlenav">Get Up and Move</a>
+        </div>
+        <div id="header-link">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="index.html" class="links">Home</a></li>
+                <li><a href="pages/activities.html" class="links">Start Moving</a></li>
+                <li><a href="pages/tidbits.html" class="links">Tidbits</a></li>
+                <li><a href="https://www.markangelhealingarts.com/" target="_blank" class="links">Healing Arts Site</a></li>
+                <li><a href="pages/contact.html" class="links">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-                <div class="row specialfont">
-                    <!--This DIV row is for more buttons-->
+    <div class="container">
+        <div id="intro-video">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/frFlcZ1Xnno"></iframe>
+        </div>
+        
+        <div id="intro-info">
+            <h1 id="intro-header">What is Get Up and Move?</h1>
+            <div>Get Up and Move (GUM) is a program that will encourage you to be a little more active throughout your day.</div>
+           
+            <button type="button" class="btn btn-primary modal-btns" data-toggle="modal" data-target="#read-more">Read more here</button>
+            <button type="button" class="btn btn-outline-secondary modal-btns" data-toggle="modal" data-target="#disclaimer">Disclaimer</button>
+
+            <div class="modal fade" id="read-more" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">More about GUM</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            Nearly everyone comes to a point in their life (early or late and often during mid-age) where they realize they suffer from one or more chronic challenges that are the result of injury, illness, stress, emotional distress, and/or less-than-optimal attitudes, belief systems or habitual behaviors. A preponderance of evidence shows that siting too much contributes significantly to disease, and is a cofactor in workplace injury. In a meta-analysis of 47 articles (selected from nearly 21,000 studies related to the topic), Biswas (2015) found that there is a significant correlation between prolonged sedentary behavior and comorbidity factors for cardiovascular disease, diabetes, obesity, musculoskeletal disorders, and several other disabling conditions. There is compelling evidence that sitting less than an hour at a time and fewer than four hours throughout the work-day significantly decreases associated comorbidity factors. Additionally, by simply standing and changing posture while working at a desk, one can increase caloric burn by up to 2Kcal/min through Non‐Exercise Activity Thermogenesis (Levine, 2004). Biswas (2015) concluded that additional evidence shows that exercising after work will not significantly reverse the damage caused by sitting too much throughout the day. But there is good news, the simple act of standing up and moving around within the workspace for a few minutes every half-hour to hour can minify many of the harmful effects of sitting (Buckly, 2015).TERM PAPER stuff
+                            <br><br>
+                            <b>Solution:</b> GUM! is a comprehensive set of scientifically proven movements, meditations and attitudes taken from the best practices in Taoist (ancient Chinese) Taiji and Qigong tradition, modern physical therapy, Yoga, and other Eastern and Western methodologies. This solution is delivered through a mostly fixed set of movements, exercises and meditations (forms) that the student at first follows along with and ultimately masters. The explanations given while practicing help students relate the movements to physical, emotional and/or psychological or emotional challenges they may encounter throughout life. GUM! involves exercise, meditation, and lifestyle modifications developed to help people move more, more regularly, and in more beneficial ways. Traditional Chinese martial arts and healing exercises are the foundation of the program. These ancient Taoist practice from China helps improve the flow of life force energy (Qi), and thus offers greater health and longevity to the practitioner. In Western terms, practicing this gentle repetitive movement helps improve circulation, balance, mobility, and strength, while reducing stress, fatigue, and stagnation. Qigong activities are a healing practice that can be traced back over 5,000 years in ancient Chinese culture. In modern times, studies done in both the East and the West show that multiple categories of benefits are derived by practicing this art. Some of the categories of benefits studied are: bone density, cardiopulmonary effects, physical function, balance, fall prevention and related risk factors, quality of life, self-efficacy, patient reported outcomes, psychological symptoms, and immune- and inflammation-related responses (Jahnke, et al., 2010)Buttons for each subordinate pageIntro videoAccording to the U.S. Bureau of Labor Statistics, people most at risk for sitting too much are in jobs such as software developers, bus drivers, long-haul truck drivers, accountants, lawyers, engineers, and EMTs and Paramedics, just to mention a few. The pandemic has thrown many others into the mix. With distance learning, teachers and students became mostly sedentary as well. GUM!
+                        </div>
+                    </div>
                 </div>
-                <!-- **************************** BOOTSTRAP WORK BELOW **************************** -->
+            </div>
 
-                <!-- Page Content-->
-                <!-- <div class="container">  To Caasi, commented out container in order to fill out the page just so he can see it better, Will change if he doesn;t like it-->
-                <!-- Heading Row-->
+            <div class="modal fade" id="disclaimer" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Fitness and Exercise Disclaimer</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            The purpose of this DISCLAIMER AND NOTICE is to make you aware of the potential risks connected with activity in any exercise, physical fitness or training program. It is also to help you make an informed decision as to whether or not you should participate in Get Up and Move! and the activities associated with it. 
+                            <br><br>
+                            <b>DISCLAIMER OF LIABILITY</b> 
+                            <br><br>
+                            Injuries of all types can occur when participating in exercise, physical fitness and training programs, hence Get Up and Move! strongly encourages all users to obtain a comprehensive physical examination by a licensed physician BEFORE undertaking any exercise or training demonstrated on this website, and/or any of videos, MP4s, MP3s and training materials offered on this website. If you choose to participate in any of the Get Up and Move! program or any associated program, you fully assume the risk of any resulting injury. Such injuries include but are not limited to: Bruising, cuts and general soreness Muscle and tendon injuries Ligament and skeletal injuries Fractured or broken bones Concussions Heart attack 
+                            <br><br>
+                            <b>GET UP AND MOVE DISCLAIMS ANY LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES AND ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ANY LOSS, INJURY OR DAMAGE SUFFERED BY ANY PERSON AS A RESULT OF THE USE OR MISUSE OF ANY INFORMATION, VIDEOS, MPSs OR TRAINING MATERIALS MADE AVAILABLE ON THIS WEBSITE.</b> 
+                            <br><br>
+                            In consideration of performing or participating in these types of activities, you hereby agree to indemnify and hold harmless Mark C. Angel and other associated with developing the Get Up and Move! program, and its officers, directors, and agents, and their respective successors and assigns, against any loss, liability, damage, cause of action, cost, or expense of any nature whatsoever, including without limitation reasonable attorneys’ fees and other legal costs, even if said injuries or losses are the direct result of our negligence. The content, information, videos, MP4s, MP3s and training materials offered and made available on this website are for informational purposes only. 
+                            <br><br>
+                            <b>USE THIS PROGRAM AND ALL INFORMATION CONTAINED WITHIN IT AT YOUR OWN RISK</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <div class="row align-items-center my-5">
+    <div class="container">
+        <a href="GUM/GUM_Orientation/index.html" target="_blank">
+            <img alt="Get up and move orientation course" src="img/GUM_Orientation.png" id="gum-orientation-logo">
+        </a>
+    </div>
+
+    <div class="navbar navbar-expand-lg navbar-fixed-bottom" id="footer">
+        <div id="videos-container">
+            <div class="video-section-container">
+                <b>Easy Teaching Videos</b>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=HLVORLKgbG0" target="_blank" class="class-links">Level 1: Session 1</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=khRNGR_nRZM" target="_blank" class="class-links">Level 1: Session 2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=0jBrAwQxxFo" target="_blank" class="class-links">Level 1: Session 3</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=woWyNX5kyDA" target="_blank" class="class-links">Level 1: Session 4</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 1: Session 5</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 1: Session 6</a></li>
+                </ul>
+            </div>
+            <div class="video-section-container">
+                <b>Moderate Teaching Videos</b>
+                <ul>
+                    <li><a href="/" target="_blank" class="class-links">Level 2: Session 1</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 2: Session 2</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 2: Session 3</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 2: Session 4</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 2: Session 5</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 2: Session 6</a></li>
+                </ul>
+            </div>
+            <div class="video-section-container">
+                <b>Vigorous Teaching Videos</b>
+                <ul>
+                    <li><a href="/" target="_blank" class="class-links">Level 3: Session 1</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 3: Session 2</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 3: Session 3</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 3: Session 4</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 3: Session 5</a></li>
+                    <li><a href="/" target="_blank" class="class-links">Level 3: Session 6</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="app-icons">
+            <a href="https://drive.google.com/file/d/1NiZZ364WPhjqGX_dCftYkYcdlFnYkZkE/view" target="_blank"><img src="img/google-play-badge.png" alt="Google play badge" id="googleplay-icon"></a>
+            <a href="/" target="_blank"><img src="img/applestore.png" id="apple-icon"></a>
+        </div>
+    </div>
+
+
+
+                <!-- <div class="row align-items-center my-5">
                     <div class="col-sm"><a href="https://markangelhealingarts.github.io/GUM/GUM_Orientation/index.html"
                             target="_blank">
                             <img alt="Get up and move orientation course" src="img/GUM_Orientation.png" width="400px"
@@ -77,28 +147,21 @@
                         </a></div>
                     <div class="col-sm">
                         <h1 class="whiteTxt specialfont"><b>Introductory Video</b></h1>
-                        <iframe width="600" height="400" src="https://www.youtube.com/embed/frFlcZ1Xnno">
-                        </iframe>
+                        <iframe width="600" height="400" src="https://www.youtube.com/embed/frFlcZ1Xnno"></iframe>
                     </div>
                     <div class="col-sm">
-                        <h1 class="font-weight-light whiteTxt">What is Get Up and Move?</h1><br>
-                        <p> Get up and Move (GUM) is a program that includes both a website and a
-                            mobile app that
-                            will encourage you to be a little more active throughout your day.
-                            Many people spend their time at work or at home sitting for long periods of time.
-                            Whether it be homework, netflix, youtube, or work, it can be detrimental
-                            to your health, especially in <a
-                                href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3404815/" class="externalLink">recent
-                                times of COVID19 lockdowns.</a></p>
-                        <!-- Button trigger modal -->
-                        <br>
+                        <h1 class="font-weight-light whiteTxt" id="title-header">What is Get Up and Move?</h1><br>
+                        <p> Get Up and Move (GUM) is a program that will encourage you to be a little more active
+                            throughout your day.</p>
+                        Button trigger modal -->
+                        <!-- <br>
                         <button type="button" class="btn btn-primary specialfont" data-toggle="modal"
                             data-target="#exampleModalLong">
                             Read more here
-                        </button>
+                        </button> -->
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                        <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
@@ -193,13 +256,13 @@
                             </div>
                         </div>
 
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#disclaimer">
+                        Button trigger modal -->
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#disclaimer">
                             Disclaimer
-                        </button>
+                        </button> -->
 
                         <!-- Modal -->
-                        <div class="modal fade" id="disclaimer" tabindex="-1" role="dialog"
+                        <!-- <div class="modal fade" id="disclaimer" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
@@ -259,37 +322,20 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Content Row-->
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h2 class="card-title">Currently only available on Android! Download APK</h2>
-                                <a href="https://drive.google.com/file/d/1NiZZ364WPhjqGX_dCftYkYcdlFnYkZkE/view"
-                                    target="_blank"> needs a link to appstore<img src="img/google-play-badge.png"
-                                        alt="Google play badge" width="90%">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 mb-5">
-                        <div class="card h-100">
-                            <div class="card-body">
-                                <h2 class="card-title">Coming Soon to iOS!</h2>
-                                <br><br><br>
-                                <a href="/" target="_blank"> <img src="img/applestore.png" width="68%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- </div> -->
+                </div> -->
 
-                <!-- **************************** BOOTSTRAP WORK ABOVE **************************** -->
-            </h4>
-        </div>
-    </div>
+                <!-- <div class="row">
+                    <div class="card-body">
+                        <h2 class="card-title">Currently only available on Android! Download APK</h2>
+                        <a href="https://drive.google.com/file/d/1NiZZ364WPhjqGX_dCftYkYcdlFnYkZkE/view" target="_blank"> needs a link to appstore<img src="img/google-play-badge.png" alt="Google play badge" width="100px">
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="card-title">Coming Soon to iOS!</h2>
+                        <br><br><br>
+                        <a href="/" target="_blank"> <img src="img/applestore.png" width="100px">
+                    </div>
+                </div> -->
 </body>
-<!--</body>-->
 
 </html>

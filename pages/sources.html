@@ -1,375 +1,1186 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="icon" href="../img/newLogoNoText.png">
-    <title>Get Up and Move!</title>
-    <link rel='stylesheet' type='text/css' href='../css/app.css'>
-		<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" type='text/css' href="../css/styles.css">
-    <script src="js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!--Firestore-->
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+<head>
+  <link rel="icon" href="../img/newLogoNoText.png">
+  <title>Get Up and Move!</title>
+  <link rel='stylesheet' type='text/css' href='../css/app.css'>
+  <link rel='stylesheet' type='text/css'
+    href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" type='text/css' href="../css/styles.css">
+  <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--Firestore-->
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script> -->
-    <!--Firestore-->
-  </head><nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top specialfont">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!--Firestore-->
+</head>
+<nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top specialfont">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="container-fluid">
-      <div class="nav navbar-left">
-        <img src="../img/newLogoNoText.png" width="50px" height="50px"/>
-        <a href="../index.html" class="navbar-brand" id="titlenav">&nbsp;Get Up and Move</a>
-      </div>
-      <ul class="nav navbar-nav " style="font-family: Lucida Console, Courier New, monospace;">
-        <li><a href="../index.html">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Pages
-          </a>
-          <div class="dropdown-menu specialfont" aria-labelledby="navbarDropdown" style="font-weight: bold !important;">
-            <a class="dropdown-item" href="activities.html">Start Moving!</a>
-            <a class="dropdown-item" href="tidbits.html">Tidbits Blog</a>
-            <a class="dropdown-item" href="donate.html">Donate</a>
-            <a class="dropdown-item" href="https://www.markangelhealingarts.com/" target="_blank">markangelhealingarts.com</a>
-            <a class="dropdown-item" href="sources.html">Sources</a>
-          </div>
-        </li>
-      </ul>
+    <div class="nav navbar-left">
+      <img src="../img/newLogoNoText.png" width="50px" height="50px" />
+      <a href="../index.html" class="navbar-brand" id="titlenav">&nbsp;Get Up and Move</a>
+    </div>
+    <ul class="nav navbar-nav " style="font-family: Lucida Console, Courier New, monospace;">
+      <li><a href="../index.html">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Pages
+        </a>
+        <div class="dropdown-menu specialfont" aria-labelledby="navbarDropdown" style="font-weight: bold !important;">
+          <a class="dropdown-item" href="activities.html">Start Moving!</a>
+          <a class="dropdown-item" href="tidbits.html">Tidbits Blog</a>
+          <a class="dropdown-item" href="donate.html">Donate</a>
+          <a class="dropdown-item" href="https://www.markangelhealingarts.com/"
+            target="_blank">markangelhealingarts.com</a>
+          <a class="dropdown-item" href="sources.html">Sources</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </nav><br>
 <br>
 <br>
+
 <body>
-    <div class="container-fluid banner specialfont">
-        <div class="col-md-10 offset-md-1 info" style="box-shadow: 0 0 0 2pt white;">
-            <h1 class="whiteTxt">Sources</h1>
+  <div class="container-fluid banner specialfont">
+    <div class="col-md-10 offset-md-1 info" style="box-shadow: 0 0 0 2pt black;">
+      <h1 class="whiteTxt">Sources</h1>
 
-            <div class="row">
-                <div class="col-lg">
-                    <h3 style="text-align: left; color:white !important;">
-                        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 7.0.4.2 (Linux)"/>
-	<meta name="created" content="00:00:00"/>
-	<meta name="changed" content="00:00:00"/>
-	<style type="text/css">
-		@page { size: 8.5in 11in; margin: 1in; color:white }
-		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
-	</style>
-</head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="margin-left: 0.5in; text-indent: -0.5in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt">Biswas,
-A., Oh P.I., Faulkner, G.E., Bajaj, R.R., Silver, M.A., Mitchell,
-M.S., Alter, DA. (2015, Jan 20). Sedentary time and its association
-with risk for disease incidence, mortality, and hospitalization in
-adults: a systematic review and meta-analysis. </font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i>Annals
-of Intern Medicine,162(2),</i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal">123-32.
-doi: 10.7326/M14-1651. PMID: 25599350</span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal">Buckley,
-John &amp; Hedge, Alan &amp; Yates, Thomas &amp; Copeland, Robert &amp;
-Loosemore, Michael &amp; Hamer, Mark &amp; Bradley, Gavin &amp;
-Dunstan, D. (2015). The sedentary office: An expert statement on the
-growing case for change towards better health and productivity.
-</span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i>British
-Journal of Sports Medicine. 49,</i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal">
-1357-1362. 10.1136/bjsports2015094618. </span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal">Bull
-FC, Al-Ansari SS, Biddle S, et al. World Health Organization 2020
-guidelines on physical activity and sedentary behaviour. </span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i>British
-Journal of Sports Medicine 2020;54:1451-1462</i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal">.
-</span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal">
-HYPERLINK
-&quot;https://bjsm.bmj.com/content/54/24/1451&quot;</span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://bjsm.bmj.com/content/54/24/1451
-</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><span style="text-decoration: none"> <font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal">Bureau
-of Labor Statistics, US Department of Labor. Press Release, National
-census of fatal occupational injuries in 2019. (2020, December 16). </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none"> 
-  </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://www.bls.gov/news.release/pdf/cfoi.pdf&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://www.bls.gov/news.release/pdf/cfoi.pdf</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Carlson
-S. A., Adams E. K., Yang Z., Fulton J. E., (2018). Percentage of
-Deaths Associated With Inadequate Physical Activity in the United
-States. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Prev
-Chronic Dis</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-2018;15:170354. DOI: </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;http://dx.doi.org/10.5888/pcd18.170354&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>http://dx.doi.org/10.5888/pcd18.170354</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK &quot;&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Carlson,
-S, Fulton, J. E., Pratt, M., Yang, Z. , Adams,, E. K., (2015).
-Inadequate Physical Activity and Health Care Expenditures in the
-United States, </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Progress
-in Cardiovascular Diseases</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">,
-Volume 57, Issue 4, 2015, Pages 315-323, ISSN 0033-0620, </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1016/j.pcad.2014.08.002&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1016/j.pcad.2014.08.002</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">. 
-  (</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;http://www.sciencedirect.com/science/article/pii/S0033062014001236&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>http://www.sciencedirect.com/science/article/pii/S0033062014001236</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">)
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Center
-for Disease Control and Prevention (CDC). (2020, October (last
-reviewed). How much physical activity do adults need?
-https://www.cdc.gov/physicalactivity/basics/adults/index.htm</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Dean
-Cooley, Scott Pedersen, &quot;A Pilot Study of Increasing
-Nonpurposeful Movement Breaks at Work as a Means of Reducing
-Prolonged Sitting&quot;, Journal of Environmental and Public Health,
-vol. 2013, Article ID 128376, 8 pages, 2013. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1155/2013/128376&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1155/2013/128376</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK &quot;&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>
-</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Dombrowski,
-S. U., Sniehotta, F. F., Avenell, A., Johnston, M., MacLennan, G.,
-Araújo-Soares, V. (2012). Identifying active ingredients in complex
-behavioural interventions for obese adults with obesity-related
-co-morbidities or additional risk factors for co-morbidities: A
-systematic review. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Health
-Psychology Review</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">.
-7–32. doi: 10.1080/17437199.2010.513298. </span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Flanagan,
-E. W., Beyl, R. A., Fearnbach, S. N., Altazan, A. D., Martin, C. K.,
-&amp; Redman, L. M. (2021). The Impact of COVID-19 Stay-At-Home
-Orders on Health Behaviors in Adults. Obesity (Silver Spring, Md.),
-29(2), 438–445. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1002/oby.23066&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1002/oby.23066</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Health
-Plus Medical Correspondant, (2021, January 25). The ‘Sitting’
-Disease: Did COVID-19 Worsen Our Risk? </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">The
-Guardian Media Newsroom. </span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://www.cnc3.co.tt/the-sitting-disease-did-covid-19-worsen-our-risks/&quot;</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://www.cnc3.co.tt/the-sitting-disease-did-covid-19-worsen-our-risks/</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Gardner,
-B., Smith, L., Lorencatto, F., Hamer, M., &amp; Biddle, S. J. (2016).
-How to reduce sitting time? A review of behaviour change strategies
-used in sedentary behaviour reduction interventions among adults.
-</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Health
-psychology review</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">,
-</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">10</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">(1),
-89–112. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743603/&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743603/</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Hamer,
-M., Endrighi, R., Poole L. (2012). Physical activity, stress
-reduction, and mood: insight into immunological mechanisms. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Methods
-in Molecular Biology, 934, </span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">89-102.
-</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1007/978-1-62703-071-7_5&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1007/978-1-62703-071-7_5</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-PMID: 22933142.</span></span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Katzmarzyk,
-P. T., Powell, K. E., Jakicic, J. M., Troiano, R. P., Piercy, R. P.,
-Iiercy, K., Tennant, B. (2019). For the 2018 Physical Activity
-Guidlines Advisory Committee. Sedentary Behavior and Health: Update
-from the 2018 Physical Activity Guidelines Advisory Committee,
-Medicine &amp; Science in Sports &amp; Exercise: June 2019 - Volume
-51 - Issue 6 - p 1227-1241 doi: 10.1249/MSS.0000000000001935 </span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Macvean
-, M., (2014, July 31). Interview of Dr. James Levine,</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">
-Las Angeles Times.    </span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://www.latimes.com/science/sciencenow/la-sci-sn-get-up-20140731-story.html&quot;</span></span></font></font></font><font color="#000080"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://www.latimes.com/science/sciencenow/la-sci-sn-get-up-20140731-story.html</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">León-Muñoz,
-L. M., Martínez-Gómez, D., Balboa-Castillo, T., López-García, E.,
-Guallar-Castillón, P., &amp; Rodríguez-Artalejo, F. (2013).
-Continued sedentariness, change in sitting time, and mortality in
-older adults. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Medicine
-and science in sports and exercise</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">,
-</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">45</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">(8),
-1501–1507. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1249/MSS.0b013e3182897e87&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1249/MSS.0b013e3182897e87</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Levine,
-J. A. (2004). Non-exercise activity thermogenesis (NEAT). </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Nutrition
-reviews</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">,
-</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">62</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">(7
-Pt 2), S82–S97. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1111/j.1753-4887.2004.tb00094.x&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1111/j.1753-4887.2004.tb00094.x</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Madaan,
-V., &amp; Petty, F. D. (2006). Exercise for mental health. Primary
-care companion to the Journal of clinical psychiatry, 8(2), 106.
-</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.4088/pcc.v08n0208a
-</u></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Mailing,
-L. J., Allen, J. M., Buford, T. W., Fields, C. J., &amp; Woods, J. A.
-(2019). Exercise and the Gut Microbiome: A Review of the Evidence,
-Potential Mechanisms, and Implications for Human Health. Exercise and
-sport sciences reviews, 47(2), 75–85. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1249/JES.0000000000000183&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1249/JES.0000000000000183</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Matthews,
-C. E., Chen, K. Y., Freedson, P. S., Buchowski, M. S., Beech, B. M.,
-Pate, R. R., et al. (2003–2004). Amount of time spent in sedentary
-behaviors in the United States. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">American
-Journal of Epidemiology. 2008,167, </span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">875-81.
-[PMID: 18303006] </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://pubmed.ncbi.nlm.nih.gov/18303006/&quot;</span></span></font></font></font><font color="#0000ff"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://pubmed.ncbi.nlm.nih.gov/18303006/</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-doi:10.1093/aje/kwm390.</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Sharma,
-A., </span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Michie,
-S., Abraham, C., Whittington, C., McAteer, J., Gupta, S. (2009).
-Effective techniques in healthy eating and physical activity
-interventions: A meta-regression. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Health
-Psychology</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">.
-690–701. doi: 10.1037/a0016136.</span></span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Patel,
-A. V., Maliniak, M. L., Rees-Punia, E., Matthews, C. E. Gapstur, S.
-M. (2018, October). Prolonged Leisure Time Spent Sitting in Relation
-to Cause-Specific Mortality in a Large US Cohort. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">American
-Journal of Epidemiology,</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-Volume 187, Issue 10, October 2018, Pages 2151–2158, </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1093/aje/kwy125&quot;</span></span></font></font></font><font color="#000080"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1093/aje/kwy125</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Rovniak,
-L. S., Denlinger, L., Duveneck, E., Sciamanna, C. N.. Kong, L.,
-Freivalds, A., Ray, C. A. (2014). Feasibility of using a compact
-elliptical device to increase energy expenditure during sedentary
-activities.</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">
-Journal of Science and Medicine in Sport</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">.
-376–380. doi: 10.1016/j.jsams.2013.07.014. </span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Salgado-Aranda,
-R., Pérez-Castellano, N., Núñez-Gil, I., Orozco, A. J.,
-Torres-Esquivel, N., Flores-Soler, J., Chamaisse-Akari, A.,
-Mclnerney, A., Vergara-Uzcategui, C., Wang, L., González-Ferrer, J.
-J., Filgueiras-Rama, D., Cañadas-Godoy, V., Macaya-Miguel, C., &amp;
-Pérez-Villacastín, J. (2021). Influence of Baseline Physical
-Activity as a Modifying Factor on COVID-19 Mortality: A
-Single-Center, Retrospective Study. Infectious diseases and therapy,
-1–14. Advance online publication.
-https://doi.org/10.1007/s40121-021-00418-6</span></span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Shrestha,
-N., Ijaz, S., Kukkonen-Harjula, K. T., Kumar, S., Nwankwo, C. P.
-(2015) Workplace interventions for reducing sitting at work. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Cochrane
-Database of Systematic Reviews.</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-CD010912. doi: 10.1002/14651858.CD010912.pub2.</span></span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Smith-McLallen,
-Aaron &amp; Heller, Debbie &amp; Vernisi, Kristin &amp; Gulick, Diana
-&amp; Cruz, Samantha &amp; Snyder, Richard (2016). Comparative
-Effectiveness of Two Walking Interventions on Participation, Step
-Counts, and Health. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">American
-Journal of Health Promotion.</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-31. 10.1177/0890117116658012.</span></span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Steeves,
-J.A., Bassett, D. R., Fitzhugh, E. C., Raynor, H. A., Thompson, D. L.
-(2012). Can sedentary behavior be made more active? A randomized
-pilot study of TV commercial stepping versus walking. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">International
-Journal of Behavioral Nutrition and Physical Activity</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">.
-95. doi: 10.1186/1479-5868-9-95. </span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Suzuki,
-W. (2018, March 21) </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">The
-brain-changing benefits of exercise</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-[video]. TED Talk. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://www.youtube.com/watch?v=BHY0FxzoKZE&amp;ab_channel=TED&quot;</span></span></font></font></font><font color="#000080"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://www.youtube.com/watch?v=BHY0FxzoKZE&amp;ab_channel=TED</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">van
-der Ploeg, H. P., Chey, T., Korda, R. J., Banks, E., Bauman, A.
-(2012, March 26) Sitting time and all-cause mortality risk in 222,497
-Australian adults. </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Arch
-Intern Med. 172(6):494-500</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">.
-doi: 10.1001/archinternmed.2011.2174. PMID: 22450936.</span></span></font></font></font></p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">Valero‐Elizondo,
-J., Salami, J. A., Chukwuemeka, U. O., Ogunmoroti, O., Arrieta, A.,
-Spatz, E. S., Younus, A., Rana, J. S., Salim, S. V., Blankstein, R., 
-  Blaha, M. J., Veledar, E., &amp; Nasir, K. (Originally published
-7 Sep 2016). Economic Impact of Moderate‐Vigorous Physical Activity
-Among Those With and Without Established Cardiovascular Disease: 2012
-Medical Expenditure Panel Survey </span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPS-ItalicMT, serif"><font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Journal
-of the American Heart Association.</span></i></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="text-decoration: none">
-HYPERLINK
-&quot;https://doi.org/10.1161/JAHA.116.003614&quot;</span></span></font></font></font><font color="#000080"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>https://doi.org/10.1161/JAHA.116.003614</u></span></font></font></font><font color="#FFFFFF"><font face="TimesNewRomanPSMT, serif"><font size="3" style="font-size: 16pt"><span style="font-style: normal"><span style="text-decoration: none">
-</span></span></font></font></font>
-</p>
-<p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
-<br/>
+      <div class="row">
+        <div class="col-lg">
+          <h3 style="text-align: left; color:black !important;">
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+            <html>
 
-</p>
-</body>
-</html>
-                    </h3>
-                </div>
-            </div>
+            <head>
+              <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+              <title></title>
+              <meta name="generator" content="LibreOffice 7.0.4.2 (Linux)" />
+              <meta name="created" content="00:00:00" />
+              <meta name="changed" content="00:00:00" />
+              <style type="text/css">
+                @page {
+                  size: 8.5in 11in;
+                  margin: 1in;
+                  color: black
+                }
+
+                p {
+                  margin-bottom: 0.1in;
+                  line-height: 115%;
+                  background: transparent
+                }
+              </style>
+            </head>
+
+            <body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
+              <p style="margin-left: 0.5in; text-indent: -0.5in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt">Biswas,
+                      A., Oh P.I., Faulkner, G.E., Bajaj, R.R., Silver, M.A., Mitchell,
+                      M.S., Alter, DA. (2015, Jan 20). Sedentary time and its association
+                      with risk for disease incidence, mortality, and hospitalization in
+                      adults: a systematic review and meta-analysis. </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i>Annals
+                        of Intern Medicine,162(2),</i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal">123-32.
+                        doi: 10.7326/M14-1651. PMID: 25599350</span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal">Buckley,
+                        John &amp; Hedge, Alan &amp; Yates, Thomas &amp; Copeland, Robert &amp;
+                        Loosemore, Michael &amp; Hamer, Mark &amp; Bradley, Gavin &amp;
+                        Dunstan, D. (2015). The sedentary office: An expert statement on the
+                        growing case for change towards better health and productivity.
+                      </span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i>British
+                        Journal of Sports Medicine. 49,</i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal">
+                        1357-1362. 10.1136/bjsports2015094618. </span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal">Bull
+                        FC, Al-Ansari SS, Biddle S, et al. World Health Organization 2020
+                        guidelines on physical activity and sedentary behaviour. </span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i>British
+                        Journal of Sports Medicine 2020;54:1451-1462</i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal">.
+                      </span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal">
+                        HYPERLINK
+                        &quot;https://bjsm.bmj.com/content/54/24/1451&quot;</span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://bjsm.bmj.com/content/54/24/1451
+                        </u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000"><span style="text-decoration: none">
+                    <font face="TimesNewRomanPSMT, serif">
+                      <font size="3" style="font-size: 16pt"><span style="font-style: normal">Bureau
+                          of Labor Statistics, US Department of Labor. Press Release, National
+                          census of fatal occupational injuries in 2019. (2020, December 16). </span>
+                  </span></font>
+                </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none"> 
+                            </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://www.bls.gov/news.release/pdf/cfoi.pdf&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://www.bls.gov/news.release/pdf/cfoi.pdf</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Carlson
+                          S. A., Adams E. K., Yang Z., Fulton J. E., (2018). Percentage of
+                          Deaths Associated With Inadequate Physical Activity in the United
+                          States. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Prev
+                          Chronic Dis</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          2018;15:170354. DOI: </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;http://dx.doi.org/10.5888/pcd18.170354&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>http://dx.doi.org/10.5888/pcd18.170354</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK &quot;&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Carlson,
+                          S, Fulton, J. E., Pratt, M., Yang, Z. , Adams,, E. K., (2015).
+                          Inadequate Physical Activity and Health Care Expenditures in the
+                          United States, </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Progress
+                          in Cardiovascular Diseases</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">,
+                          Volume 57, Issue 4, 2015, Pages 315-323, ISSN 0033-0620, </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1016/j.pcad.2014.08.002&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1016/j.pcad.2014.08.002</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">. 
+                            (</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;http://www.sciencedirect.com/science/article/pii/S0033062014001236&quot;</span></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>http://www.sciencedirect.com/science/article/pii/S0033062014001236</u></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">)
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Center
+                          for Disease Control and Prevention (CDC). (2020, October (last
+                          reviewed). How much physical activity do adults need?
+                          https://www.cdc.gov/physicalactivity/basics/adults/index.htm</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Dean
+                          Cooley, Scott Pedersen, &quot;A Pilot Study of Increasing
+                          Nonpurposeful Movement Breaks at Work as a Means of Reducing
+                          Prolonged Sitting&quot;, Journal of Environmental and Public Health,
+                          vol. 2013, Article ID 128376, 8 pages, 2013. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1155/2013/128376&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1155/2013/128376</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK &quot;&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><u>
+                        </u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Dombrowski,
+                          S. U., Sniehotta, F. F., Avenell, A., Johnston, M., MacLennan, G.,
+                          Araújo-Soares, V. (2012). Identifying active ingredients in complex
+                          behavioural interventions for obese adults with obesity-related
+                          co-morbidities or additional risk factors for co-morbidities: A
+                          systematic review. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Health
+                          Psychology Review</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">.
+                          7–32. doi: 10.1080/17437199.2010.513298. </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Flanagan,
+                          E. W., Beyl, R. A., Fearnbach, S. N., Altazan, A. D., Martin, C. K.,
+                          &amp; Redman, L. M. (2021). The Impact of COVID-19 Stay-At-Home
+                          Orders on Health Behaviors in Adults. Obesity (Silver Spring, Md.),
+                          29(2), 438–445. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1002/oby.23066&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1002/oby.23066</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Health
+                          Plus Medical Correspondant, (2021, January 25). The ‘Sitting’
+                          Disease: Did COVID-19 Worsen Our Risk? </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">The
+                          Guardian Media Newsroom. </span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://www.cnc3.co.tt/the-sitting-disease-did-covid-19-worsen-our-risks/&quot;</span></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://www.cnc3.co.tt/the-sitting-disease-did-covid-19-worsen-our-risks/</u></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Gardner,
+                          B., Smith, L., Lorencatto, F., Hamer, M., &amp; Biddle, S. J. (2016).
+                          How to reduce sitting time? A review of behaviour change strategies
+                          used in sedentary behaviour reduction interventions among adults.
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Health
+                          psychology review</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">,
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">10</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">(1),
+                          89–112. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743603/&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4743603/</u></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Hamer,
+                          M., Endrighi, R., Poole L. (2012). Physical activity, stress
+                          reduction, and mood: insight into immunological mechanisms. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Methods
+                          in Molecular Biology, 934, </span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">89-102.
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1007/978-1-62703-071-7_5&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1007/978-1-62703-071-7_5</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          PMID: 22933142.</span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Katzmarzyk,
+                          P. T., Powell, K. E., Jakicic, J. M., Troiano, R. P., Piercy, R. P.,
+                          Iiercy, K., Tennant, B. (2019). For the 2018 Physical Activity
+                          Guidlines Advisory Committee. Sedentary Behavior and Health: Update
+                          from the 2018 Physical Activity Guidelines Advisory Committee,
+                          Medicine &amp; Science in Sports &amp; Exercise: June 2019 - Volume
+                          51 - Issue 6 - p 1227-1241 doi: 10.1249/MSS.0000000000001935 </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Macvean
+                          , M., (2014, July 31). Interview of Dr. James Levine,</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">
+                          Las Angeles Times.    </span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://www.latimes.com/science/sciencenow/la-sci-sn-get-up-20140731-story.html&quot;</span></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000080">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://www.latimes.com/science/sciencenow/la-sci-sn-get-up-20140731-story.html</u></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">León-Muñoz,
+                          L. M., Martínez-Gómez, D., Balboa-Castillo, T., López-García, E.,
+                          Guallar-Castillón, P., &amp; Rodríguez-Artalejo, F. (2013).
+                          Continued sedentariness, change in sitting time, and mortality in
+                          older adults. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Medicine
+                          and science in sports and exercise</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">,
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">45</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">(8),
+                          1501–1507. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1249/MSS.0b013e3182897e87&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1249/MSS.0b013e3182897e87</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Levine,
+                          J. A. (2004). Non-exercise activity thermogenesis (NEAT). </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Nutrition
+                          reviews</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">,
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">62</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">(7
+                          Pt 2), S82–S97. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1111/j.1753-4887.2004.tb00094.x&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1111/j.1753-4887.2004.tb00094.x</u></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Madaan,
+                          V., &amp; Petty, F. D. (2006). Exercise for mental health. Primary
+                          care companion to the Journal of clinical psychiatry, 8(2), 106.
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.4088/pcc.v08n0208a
+                        </u></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Mailing,
+                          L. J., Allen, J. M., Buford, T. W., Fields, C. J., &amp; Woods, J. A.
+                          (2019). Exercise and the Gut Microbiome: A Review of the Evidence,
+                          Potential Mechanisms, and Implications for Human Health. Exercise and
+                          sport sciences reviews, 47(2), 75–85. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1249/JES.0000000000000183&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1249/JES.0000000000000183</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Matthews,
+                          C. E., Chen, K. Y., Freedson, P. S., Buchowski, M. S., Beech, B. M.,
+                          Pate, R. R., et al. (2003–2004). Amount of time spent in sedentary
+                          behaviors in the United States. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">American
+                          Journal of Epidemiology. 2008,167, </span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">875-81.
+                          [PMID: 18303006] </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://pubmed.ncbi.nlm.nih.gov/18303006/&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#0000ff">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://pubmed.ncbi.nlm.nih.gov/18303006/</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          doi:10.1093/aje/kwm390.</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Sharma,
+                          A., </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Michie,
+                          S., Abraham, C., Whittington, C., McAteer, J., Gupta, S. (2009).
+                          Effective techniques in healthy eating and physical activity
+                          interventions: A meta-regression. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Health
+                          Psychology</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">.
+                          690–701. doi: 10.1037/a0016136.</span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Patel,
+                          A. V., Maliniak, M. L., Rees-Punia, E., Matthews, C. E. Gapstur, S.
+                          M. (2018, October). Prolonged Leisure Time Spent Sitting in Relation
+                          to Cause-Specific Mortality in a Large US Cohort. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">American
+                          Journal of Epidemiology,</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          Volume 187, Issue 10, October 2018, Pages 2151–2158, </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1093/aje/kwy125&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000080">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1093/aje/kwy125</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Rovniak,
+                          L. S., Denlinger, L., Duveneck, E., Sciamanna, C. N.. Kong, L.,
+                          Freivalds, A., Ray, C. A. (2014). Feasibility of using a compact
+                          elliptical device to increase energy expenditure during sedentary
+                          activities.</span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">
+                          Journal of Science and Medicine in Sport</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">.
+                          376–380. doi: 10.1016/j.jsams.2013.07.014. </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Salgado-Aranda,
+                          R., Pérez-Castellano, N., Núñez-Gil, I., Orozco, A. J.,
+                          Torres-Esquivel, N., Flores-Soler, J., Chamaisse-Akari, A.,
+                          Mclnerney, A., Vergara-Uzcategui, C., Wang, L., González-Ferrer, J.
+                          J., Filgueiras-Rama, D., Cañadas-Godoy, V., Macaya-Miguel, C., &amp;
+                          Pérez-Villacastín, J. (2021). Influence of Baseline Physical
+                          Activity as a Modifying Factor on COVID-19 Mortality: A
+                          Single-Center, Retrospective Study. Infectious diseases and therapy,
+                          1–14. Advance online publication.
+                          https://doi.org/10.1007/s40121-021-00418-6</span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Shrestha,
+                          N., Ijaz, S., Kukkonen-Harjula, K. T., Kumar, S., Nwankwo, C. P.
+                          (2015) Workplace interventions for reducing sitting at work. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Cochrane
+                          Database of Systematic Reviews.</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          CD010912. doi: 10.1002/14651858.CD010912.pub2.</span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Smith-McLallen,
+                          Aaron &amp; Heller, Debbie &amp; Vernisi, Kristin &amp; Gulick, Diana
+                          &amp; Cruz, Samantha &amp; Snyder, Richard (2016). Comparative
+                          Effectiveness of Two Walking Interventions on Participation, Step
+                          Counts, and Health. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">American
+                          Journal of Health Promotion.</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          31. 10.1177/0890117116658012.</span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Steeves,
+                          J.A., Bassett, D. R., Fitzhugh, E. C., Raynor, H. A., Thompson, D. L.
+                          (2012). Can sedentary behavior be made more active? A randomized
+                          pilot study of TV commercial stepping versus walking. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">International
+                          Journal of Behavioral Nutrition and Physical Activity</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">.
+                          95. doi: 10.1186/1479-5868-9-95. </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Suzuki,
+                          W. (2018, March 21) </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">The
+                          brain-changing benefits of exercise</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          [video]. TED Talk. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://www.youtube.com/watch?v=BHY0FxzoKZE&amp;ab_channel=TED&quot;</span></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000080">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://www.youtube.com/watch?v=BHY0FxzoKZE&amp;ab_channel=TED</u></span>
+                    </font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">van
+                          der Ploeg, H. P., Chey, T., Korda, R. J., Banks, E., Bauman, A.
+                          (2012, March 26) Sitting time and all-cause mortality risk in 222,497
+                          Australian adults. </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Arch
+                          Intern Med. 172(6):494-500</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">.
+                          doi: 10.1001/archinternmed.2011.2174. PMID: 22450936.</span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">Valero‐Elizondo,
+                          J., Salami, J. A., Chukwuemeka, U. O., Ogunmoroti, O., Arrieta, A.,
+                          Spatz, E. S., Younus, A., Rana, J. S., Salim, S. V., Blankstein, R., 
+                            Blaha, M. J., Veledar, E., &amp; Nasir, K. (Originally published
+                          7 Sep 2016). Economic Impact of Moderate‐Vigorous Physical Activity
+                          Among Those With and Without Established Cardiovascular Disease: 2012
+                          Medical Expenditure Panel Survey </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPS-ItalicMT, serif">
+                    <font size="3" style="font-size: 16pt"><i><span style="text-decoration: none">Journal
+                          of the American Heart Association.</span></i></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="2" style="font-size: 11pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                          HYPERLINK
+                          &quot;https://doi.org/10.1161/JAHA.116.003614&quot;</span></span></font>
+                  </font>
+                </font>
+                <font color="#000080">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span
+                        style="font-style: normal"><u>https://doi.org/10.1161/JAHA.116.003614</u></span></font>
+                  </font>
+                </font>
+                <font color="#000">
+                  <font face="TimesNewRomanPSMT, serif">
+                    <font size="3" style="font-size: 16pt"><span style="font-style: normal"><span
+                          style="text-decoration: none">
+                        </span></span></font>
+                  </font>
+                </font>
+              </p>
+              <p style="margin-left: 0.5in; text-indent: -0.5in; margin-bottom: 0in; line-height: 0.33in">
+                <br />
+
+              </p>
+            </body>
+
+            </html>
+          </h3>
         </div>
+      </div>
     </div>
+  </div>
 </body>
 
 
 <!--</body>-->
+
 </html>
