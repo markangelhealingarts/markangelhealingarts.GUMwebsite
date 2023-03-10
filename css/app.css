@@ -15,7 +15,8 @@ ul {
 }
 
 .navbar {
-	background-color: #22A3F7;
+	/* background-color: #22A3F7;#07B267 */
+	background-image: linear-gradient(to right, #22A3F7, #07B267);
 	display: flex;
 }
 
@@ -127,6 +128,28 @@ li:last-child {
 	text-decoration: none;
 	transition: 0.5s;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#tidbit-container {
+	width: 1000px;
+	justify-content: center;
+	margin: auto;
+}
+
+#tidbits-header {
+	text-align: center;
+	margin: 20px;
+}
+
+.tidbits {
+	width: 900px;
+	background-color: #07B267;
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
 }
 
 /* 
