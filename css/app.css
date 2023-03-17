@@ -373,7 +373,7 @@ li:last-child {
 	color: #FFFFFF;
 	font-size: 20px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+}*/
 
 h1,
 h2 {
@@ -433,7 +433,7 @@ h2 {
 	background-color: #fff;
 	padding: 40px;
 	margin: auto;
-	margin-top: 7%;
+	margin-top: 4%;
 	width: 450px;
 	height: 260px;
 	border-radius: 42px;
@@ -464,7 +464,7 @@ h2 {
 
 .contact-footer{
 	margin-left: 5%;
-	margin-top: 5%;
+	margin-top: 7%;
 	display: flex;
 }
 
@@ -516,7 +516,7 @@ h2 {
 }
 
 .payment{
-	margin-top: 30px;
+	margin-top: 50px;
 	display: flex;
 }
 
@@ -570,7 +570,7 @@ h2 {
 .email-form{
 	margin-left: 120px;
 	margin-right: 140px;
-	margin-top: 70px;
+	margin-top: 90px;
 }
 
 .email{
