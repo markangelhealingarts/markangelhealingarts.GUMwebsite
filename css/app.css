@@ -2,39 +2,61 @@ body {
 	color: #000;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	background-color: #e8f5fe;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+body::after {
+	content: '';
+	display: block;
+	height: 200px;
 }
 
 ul {
 	list-style-type: none;
 }
 
+#logo {
+	position: absolute;
+	left: 0;
+	margin-left: 30px;
+}
+
 #titlenav {
 	text-decoration: none;
 	color: #000;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar {
-	background-color: #22A3F7;
+	background-image: linear-gradient(to right, #22A3F7, #07B267);
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header-link ul {
+	margin: 0;
+	padding: 0;
 	display: flex;
 }
 
-.links {
+#header-link li a {
 	font-size: 15px;
 	text-decoration: none;
 	color: #000;
 	margin: 20px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	padding: 5px;
+	display: block;
 }
 
-.links:hover {
+#header-link ul a:hover {
 	font-size: 15px;
 	color: #e8f5fe;
 	text-decoration: none;
 	padding: 5px;
 	transition: 0.5s;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 li:last-child {
@@ -46,6 +68,30 @@ li:last-child {
 	right: 0;
 }
 
+#header-link ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+/* .toggle-button {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius: 10px;
+} */
+
 .container {
 	display: flex;
 	align-items: center;
@@ -56,6 +102,11 @@ li:last-child {
 	margin: 50px;
 }
 
+#video {
+	width: 500px;
+	height: 300px;
+}
+
 #intro-info {
 	margin: 50px;
   	top: 50%;
@@ -63,6 +114,10 @@ li:last-child {
 
 #intro-header {
 	text-align: left;
+}
+
+#disclaimer-btn {
+	margin-bottom: -25px;
 }
 
 .modal {
@@ -81,13 +136,16 @@ li:last-child {
 
 #gum-orientation-logo {
 	width: 400px;
-	margin-top: -25px;
 	margin-bottom: 33px;
 }
 
 #footer {
+	position: absolute;
 	display: flex;
 	justify-content: center;
+	height: 200px;
+	width: 100%;
+	bottom: 0;
 }
 
 #app-icons {
@@ -107,6 +165,7 @@ li:last-child {
 
 #videos-container {
 	display: flex;
+	height: 200px;
 }
 
 .video-section-container {
@@ -119,7 +178,6 @@ li:last-child {
 	color: #000;
 	text-align: left;
 	margin-left: -40px;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .class-links:hover {
@@ -127,8 +185,80 @@ li:last-child {
 	color: #e8f5fe;
 	text-decoration: none;
 	transition: 0.5s;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+#tidbit-container {
+	width: 1000px;
+	justify-content: center;
+	margin: auto;
+}
+
+#tidbits-header {
+	text-align: center;
+	margin: 20px;
+}
+
+.tidbits {
+	width: 900px;
+	background-color: #07B267;
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1500px) {
+	#intro-info {
+		margin-left: 5px;
+	}
+
+	#disclaimer-btn {
+		margin-top: 5px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.modal-content {
+		width: 383px;
+		height: 350px;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	#video {
+		width: 400px;
+		height: 250px;
+		margin-bottom: -50px;
+	}
+
+	#intro-info {
+		width: 400px;
+		margin-left: 50px;
+		margin-bottom: 60px;
+	}
+
+	#tidbit-container {
+		width: 750px;
+	}
+
+	.tidbits {
+		width: 680px;
+	}
+}
+
+@media (max-width: 800px) {
+	#tidbit-container {
+		width: 500px;
+	}
+
+	.tidbits {
+		width: 430px;
+	}
+} 
 
 /* 
 	Used here because it messes up some modals if left in the body. 
