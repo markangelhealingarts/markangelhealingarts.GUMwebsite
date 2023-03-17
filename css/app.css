@@ -131,6 +131,7 @@ li:last-child {
 
 .modal-btns {
 	margin-top: 30px;
+
 }
 
 #gum-orientation-logo {
@@ -263,14 +264,20 @@ li:last-child {
 	Used here because it messes up some modals if left in the body. 
 	Just include the class tag in elements you want to use 
 */
-/* .specialfont {
+.specialfont {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
 }
 
 .whiteTxt {
 	color: rgba(0, 0, 0, 1.00);
 	white-space: pre-line;
-} */
+	text-align: center;
+}
+
+#disclaimer {
+	text-align: center;
+}
 /* 
 .banner .navbar {
 	margin-top: 4%;
@@ -306,21 +313,29 @@ li:last-child {
 	background: rgb(253, 101, 0);
 	border-radius: 50%;
 }
-
+*/
 .pillbtn {
 	background-color: rgb(7, 178, 103);
 	border: none;
 	width: 80%;
 	height: 75%;
-	padding: 10px 20px;
+	padding: 30px 40px;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
-	margin: 4px 2px;
+	color: black;
+	/* display: inline-block; */
+	margin: 5px 3px;
 	cursor: pointer;
-	border-radius: 16px;
+	border-radius: 20px;
+	font-size: 20px;
 }
 
+
+#disclaimer{
+	position: center;
+}
+
+/*
 .pillbtn:hover {
 	box-shadow: 0 0 0 2pt white !important;
 }
