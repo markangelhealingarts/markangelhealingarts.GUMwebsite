@@ -15,36 +15,29 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script> -->
     <!--Firestore-->
-  </head>  <nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top specialfont">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="container-fluid">
-      <div class="nav navbar-left">
-        <img src="../img/newLogoNoText.png" width="50px" height="50px"/>
-        <a href="../index.html" class="navbar-brand" id="titlenav">&nbsp;Get Up and Move</a>
-      </div>
-      <ul class="nav navbar-nav " style="font-family: Lucida Console, Courier New, monospace;">
-        <li><a href="../index.html">Home</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Pages
-          </a>
-          <div class="dropdown-menu specialfont" aria-labelledby="navbarDropdown" style="font-weight: bold !important;">
-            <a class="dropdown-item" href="activities.html">Start Moving!</a>
-            <a class="dropdown-item" href="tidbits.html">Tidbits</a>
-            <a class="dropdown-item" href="donate.html">Donate</a>
-            <a class="dropdown-item" href="https://www.markangelhealingarts.com/" target="_blank">markangelhealingarts.com</a>
-            <a class="dropdown-item" href="sources.html">Sources</a>
-          </div>
-        </li>
-      </ul>
-  </div>
-</nav>    <br>
-    <br>
-    <br>
+  </head>  
 
-    <body>
+  <body>
+      <div class="navbar">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div id="logo">
+            <a href="index.html"><img src="img/newLogoNoText.png" width="50px" height="50px" /></a>
+            <a href="index.html" class="navbar-brand" id="titlenav">Get Up and Move</a>
+        </div>
+        <div id="header-link">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/activities.html">Start Moving</a></li>
+                <li><a href="pages/tidbits.html">Tidbits</a></li>
+                <li><a href="https://www.markangelhealingarts.com/" target="_blank">Healing Arts Site</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
       <div class="container-fluid banner">
         <div class="col-md-10 offset-md-1 info">
           <h1 class="whiteTxt specialfont">Start Moving!</h1>
@@ -130,6 +123,50 @@
           </h2>
         </div>
       </div>
+
+      <div class="navbar navbar-expand-lg navbar-inverse navbar-fixed-bottom" id="footer">
+        <div id="videos-container">
+            <div class="video-section-container">
+                <b class="video-header">Easy Guiding Videos</b>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=HLVORLKgbG0" target="_blank" class="class-links">Level 1: Session 1</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=khRNGR_nRZM" target="_blank" class="class-links">Level 1: Session 2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=0jBrAwQxxFo" target="_blank" class="class-links">Level 1: Session 3</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=woWyNX5kyDA" target="_blank" class="class-links">Level 1: Session 4</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 1: Session 5</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 1: Session 6</a></li>
+                </ul>
+            </div>
+            <div class="video-section-container">
+                <b class="video-header">Moderate Guiding Videos</b>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=3zb7Nh_Upls" target="_blank" class="class-links">Level 2: Session 1</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=-ajQ8ddWrUg" target="_blank" class="class-links">Level 2: Session 2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=L_NQy0bInok" target="_blank" class="class-links">Level 2: Session 3</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=kwiHORsMBcc" target="_blank" class="class-links">Level 2: Session 4</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 2: Session 5</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 2: Session 6</a></li>
+                </ul>
+            </div>
+            <div class="video-section-container">
+                <b class="video-header">Vigorous Guiding Videos</b>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=JGrCYKVN8tA" target="_blank" class="class-links">Level 3: Session 1</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=51S_NKY7qnU" target="_blank" class="class-links">Level 3: Session 2</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=bOMWbFV8ae8" target="_blank" class="class-links">Level 3: Session 3</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=agAZzVkEjVk" target="_blank" class="class-links">Level 3: Session 4</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 3: Session 5</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 3: Session 6</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="app-icons">
+            <a href="/" target="_blank"><img src="img/google-play-badge.png" alt="Google play badge" id="googleplay-icon"></a>
+            <a href="/" target="_blank"><img src="img/applestore.png" id="apple-icon"></a>
+        </div>
+    </div>
+
     </body>
 
     <script>
