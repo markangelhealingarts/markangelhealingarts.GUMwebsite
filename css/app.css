@@ -1,42 +1,284 @@
-/* Makes it so that clicked links don't become BLUE  https://stackoverflow.com/questions/6722467/how-to-remove-the-default-link-color-of-the-html-hyperlink-a-tag*/
-a,
-a:hover,
-a:focus,
-a:active {
-	text-decoration: none !important;
-	color: inherit !important;
-}
-
-.externalLink {
-	text-decoration: underline !important;
-	color: blue !important;
-}
-
 body {
-	background-color: #fff !important;
-	/* #16A1f1*/
-	background-repeat: no-repeat;
-	background-size: 50%;
-	background-position-x: center;
-	background-position-y: center;
-	background-attachment: fixed;
 	color: #000;
-	/* font-family: 'Courier New', monospace !important; */
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background-color: #e8f5fe;
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
+
+body::after {
+	content: '';
+	display: block;
+	height: 200px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#logo {
+	position: absolute;
+	left: 0;
+	margin-left: 30px;
+}
+
+#titlenav {
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar {
+	background-image: linear-gradient(to right, #22A3F7, #07B267);
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header-link ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+#header-link li a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #000;
+	margin: 20px;
+	padding: 5px;
+	display: block;
+}
+
+#header-link ul a:hover {
+	font-size: 15px;
+	color: #e8f5fe;
+	text-decoration: none;
+	padding: 5px;
+	transition: 0.5s;
+}
+
+li:last-child {
+	margin-right: 50px;
+}
+
+#header-link {
+	position: absolute; 
+	right: 0;
+}
+
+#header-link ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+/* .toggle-button {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	border-radius: 10px;
+} */
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#intro-video {
+	margin: 50px;
+}
+
+#video {
+	width: 500px;
+	height: 300px;
+}
+
+#intro-info {
+	margin: 50px;
+  	top: 50%;
+}
+
+#intro-header {
+	text-align: left;
+}
+
+#disclaimer-btn {
+	margin-bottom: -25px;
+}
+
+.modal {
+	margin: 50px;
+}
+
+.modal-content {
+	height: 560px;
+	overflow: auto;
+}
+
+.modal-btns {
+	margin-top: 30px;
+
+}
+
+#gum-orientation-logo {
+	width: 400px;
+	margin-bottom: 33px;
+}
+
+#footer {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	width: 100%;
+	bottom: 0;
+}
+
+#app-icons {
+	width: 190px;
+}
+
+#googleplay-icon {
+	height: 70px;
+	width: 190px;
+}
+
+#apple-icon {
+	height: 47px;
+	width: 165px;
+	margin-left: 13px;
+}
+
+#videos-container {
+	display: flex;
+	height: 200px;
+}
+
+.video-section-container {
+	margin: 20px;
+}
+
+.class-links {
+	font-size: 12px;
+	text-decoration: none;
+	color: #000;
+	text-align: left;
+	margin-left: -40px;
+}
+
+.class-links:hover {
+	font-size: 12px;
+	color: #e8f5fe;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+#tidbit-container {
+	width: 1000px;
+	justify-content: center;
+	margin: auto;
+}
+
+#tidbits-header {
+	text-align: center;
+	margin: 20px;
+}
+
+.tidbits {
+	width: 900px;
+	background-color: #07B267;
+	padding: 15px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1500px) {
+	#intro-info {
+		margin-left: 5px;
+	}
+
+	#disclaimer-btn {
+		margin-top: 5px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.modal-content {
+		width: 383px;
+		height: 350px;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	#video {
+		width: 400px;
+		height: 250px;
+		margin-bottom: -50px;
+	}
+
+	#intro-info {
+		width: 400px;
+		margin-left: 50px;
+		margin-bottom: 60px;
+	}
+
+	#tidbit-container {
+		width: 750px;
+	}
+
+	.tidbits {
+		width: 680px;
+	}
+}
+
+@media (max-width: 800px) {
+	#tidbit-container {
+		width: 500px;
+	}
+
+	.tidbits {
+		width: 430px;
+	}
+} 
 
 /* 
 	Used here because it messes up some modals if left in the body. 
 	Just include the class tag in elements you want to use 
 */
 .specialfont {
-	font-family: Helvetica, sans-serif !important;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
 }
 
 .whiteTxt {
 	color: rgba(0, 0, 0, 1.00);
 	white-space: pre-line;
+	text-align: center;
 }
 
+#disclaimer {
+	text-align: center;
+}
+/* 
 .banner .navbar {
 	margin-top: 4%;
 }
@@ -48,21 +290,6 @@ body {
 	margin-left: 10%;
 }
 
-.navbar {
-	background-color: rgb(7, 178, 103);
-	/* rgb(80, 200, 120) */
-	color: #ffffff;
-}
-
-.navbar-nav {
-	font-size: 150%;
-	font-weight: bold;
-}
-
-.navbar-custom {
-	background-image: linear-gradient(to left, #22a3f7, rgb(7, 178, 103));
-	border-bottom: 2px solid rgb(255, 255, 130) !important;
-}
 
 .info {
 	text-align: center;
@@ -71,48 +298,46 @@ body {
 
 .grid-container {
 	display: grid;
-	/* grid-template-columns: auto auto auto; */
 	white-space: pre-line;
 }
 
-#test {
-	color: red;
-}
-
 #titlenav {
-	font-family: "Lucida Console", "Courier New", monospace;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 200%;
 	font-weight: bold;
 }
 
-/* https://stackoverflow.com/questions/26961221/how-to-make-an-oval-in-css */
 .oval {
 	width: 100px;
 	height: 100px;
 	background: rgb(253, 101, 0);
 	border-radius: 50%;
 }
-
-/* https://www.w3schools.com/howto/howto_css_pill_button.asp */
+*/
 .pillbtn {
 	background-color: rgb(7, 178, 103);
 	border: none;
-	/* used to be none */
 	width: 80%;
 	height: 75%;
-	padding: 10px 20px;
+	padding: 30px 40px;
 	text-align: center;
-	/* vertical-align: middle; trying to center text in button */
 	text-decoration: none;
-	display: inline-block;
-	margin: 4px 2px;
+	color: black;
+	/* display: inline-block; */
+	margin: 5px 3px;
 	cursor: pointer;
-	border-radius: 16px;
+	border-radius: 20px;
+	font-size: 20px;
 }
 
+
+#disclaimer{
+	position: center;
+}
+
+/*
 .pillbtn:hover {
 	box-shadow: 0 0 0 2pt white !important;
-	/* box shadow https://stackoverflow.com/questions/5394116/outline-radius */
 }
 
 .sessiontitle {
@@ -140,32 +365,26 @@ body {
 .header img {
 	float: left;
 	background: #555;
-}
+} */
 
 /*all of the following code is just for the "How to Get Up and Move" page link*/
-body {
+/* body {
 	background-color: #fff;
-	/* background color */
 	color: #FFFFFF;
-	/* text color for the entire page */
 	font-size: 20px;
-	font-family: Verdana, Geneva, sans-serif;
-}
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}*/
 
 h1,
 h2 {
 	text-align: center;
-	/* centers h1 and h2 content */
 }
 
-/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
 	width: 900px;
 	margin: 0 auto;
-	/* centers wrapper */
 }
 
-/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
 .stepTitle {
 	padding: 4px;
 	text-align: left;
@@ -193,16 +412,189 @@ h2 {
 }
 
 .warning {
-        background-color: #FBB8C4;
-        padding:10px;
-        border-radius:20px;
-    }
+	background-color: #FBB8C4;
+	padding: 10px;
+	border-radius: 20px;
+}
 
 .material-icons {
-    color:red; 
-    font-size:3em;
+	color: red;
+	font-size: 3em;
 }
 
 .card-body {
 	background-color: #16a1f1;
+
 }
+
+
+.donate{
+	border: 1.6px solid black;
+	background-color: #fff;
+	padding: 40px;
+	margin: auto;
+	margin-top: 4%;
+	width: 450px;
+	height: 260px;
+	border-radius: 42px;
+	box-shadow: 23px 23px #8EA4D5;
+}
+
+.card-title{
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.card-content{
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 0%;
+}
+
+#venmo-img{
+	width:60px;
+	height:60px;
+}
+
+#paypal-img{
+	width:60px;
+	height:60px;
+	margin-left: 15px;
+}
+
+.contact-footer{
+	margin-left: 5%;
+	margin-top: 7%;
+	display: flex;
+}
+
+.footer-title{
+	font-weight: bold;
+	font-size: 40px;
+	position: absolute;
+	left:300px;
+	bottom: 330px;
+	background: url('../img/triangle.png');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+	background-position: right;
+}
+
+.mail{
+	font-weight: bold;
+	font-size: 18px;
+	position: absolute;
+	left:290px;
+	bottom: 240px;
+	background: url('../img/mail.png');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+	background-position: left;
+	padding: 20px;
+}
+
+.phone{
+	font-weight: bold;
+	font-size: 18px;
+	position: absolute;
+	left:290px;
+	bottom: 170px;
+	background: url('../img/phone.png');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+	background-position: left;
+	padding: 20px;
+}
+
+.follow{
+	font-weight: bold;
+	font-size: 23px;
+	position: absolute;
+	left:390px;
+	bottom: 80px;
+	padding: 20px;
+}
+
+.payment{
+	margin-top: 50px;
+	display: flex;
+}
+
+.social-media{
+	display: flex;
+	position: absolute;
+	left:350px;
+	bottom: 30px;
+}
+
+.facebook-img{
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+}
+
+.instagram-img{
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+}
+
+.twitter-img{
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+}
+
+.footer-right{
+	background-color: #8EA4D5;
+	position: absolute;
+	left:730px;
+	top:460px;
+	width: 710px;
+	height: 440px;
+}
+
+.footer-left{
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	left:0px;
+	top:500px;
+}
+
+.email-text{
+	color: white;
+	font-size: 20px;
+}
+
+.email-form{
+	margin-left: 120px;
+	margin-right: 140px;
+	margin-top: 90px;
+}
+
+.email{
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	width: 250px;
+}
+
+.email-content{
+	border-radius: 5px;
+	border: none;
+	width: 250px;
+}
+
+.email-button{
+	background-color: #000;
+	color: white;
+	width: 110px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 60px;
+}
+
+
+
