@@ -373,10 +373,10 @@ li:last-child {
 	color: #FFFFFF;
 	font-size: 20px;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+}*/
 
 h1,
-h2 {
+h2,h3,h4 {
 	text-align: center;
 }
 
@@ -424,4 +424,209 @@ h2 {
 
 .card-body {
 	background-color: #16a1f1;
-} */
+
+}
+
+
+.donate{
+	border: 1.6px solid black;
+	background-color: #fff;
+	padding: 40px;
+	margin: auto;
+	margin-top: 4%;
+	width: 450px;
+	height: 260px;
+	border-radius: 42px;
+	box-shadow: 23px 23px #8EA4D5;
+}
+
+.card-title{
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.card-content{
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 0%;
+}
+
+#venmo-img{
+	width:60px;
+	height:60px;
+}
+
+#paypal-img{
+	width:60px;
+	height:60px;
+	margin-left: 15px;
+}
+
+.contact-footer{
+	margin-left: 5%;
+	margin-top: 7%;
+	display: flex;
+}
+
+.footer-title{
+	font-weight: bold;
+	font-size: 40px;
+	position: absolute;
+	left:300px;
+	bottom: 330px;
+	background: url('../img/triangle.png');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+	background-position: right;
+}
+
+.mail{
+	font-weight: bold;
+	font-size: 18px;
+	position: absolute;
+	left:290px;
+	bottom: 240px;
+	background: url('../img/mail.png');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+	background-position: left;
+	padding: 20px;
+}
+
+.phone{
+	font-weight: bold;
+	font-size: 18px;
+	position: absolute;
+	left:290px;
+	bottom: 170px;
+	background: url('../img/phone.png');
+	background-repeat: no-repeat;
+    background-size: 50px 50px;
+	background-position: left;
+	padding: 20px;
+}
+
+.follow{
+	font-weight: bold;
+	font-size: 23px;
+	position: absolute;
+	left:390px;
+	bottom: 80px;
+	padding: 20px;
+}
+
+.payment{
+	margin-top: 50px;
+	display: flex;
+}
+
+.social-media{
+	display: flex;
+	position: absolute;
+	left:350px;
+	bottom: 30px;
+}
+
+.facebook-img{
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+}
+
+.instagram-img{
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+}
+
+.twitter-img{
+	width: 70px;
+	height: 70px;
+	margin: 7px;
+}
+
+.footer-right{
+	background-color: #8EA4D5;
+	position: absolute;
+	left:730px;
+	top:460px;
+	width: 710px;
+	height: 440px;
+}
+
+.footer-left{
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	left:0px;
+	top:500px;
+}
+
+.email-text{
+	color: white;
+	font-size: 20px;
+}
+
+.email-form{
+	margin-left: 120px;
+	margin-right: 140px;
+	margin-top: 90px;
+}
+
+.email{
+	border: none;
+	border-radius: 5px;
+	height: 35px;
+	width: 250px;
+}
+
+.email-content{
+	border-radius: 5px;
+	border: none;
+	width: 250px;
+}
+
+.email-button{
+	background-color: #000;
+	color: white;
+	width: 110px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 60px;
+}
+
+#login-form {
+	align-self: flex-start;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+
+.login-form-field::placeholder {
+	color: #3a3a3a;
+}
+  
+.login-form-field {
+	border: none;
+	border-bottom: 1px solid #3a3a3a;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	outline: none;
+	padding: 0px 0px 5px 5px;
+}
+  
+#login-form-submit {
+	width: 150px;
+	padding: 7px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: #3a3a3a;
+	cursor: pointer;
+	outline: none;
+}
+
+
+
