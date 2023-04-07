@@ -602,6 +602,12 @@ h2,h3,h4 {
 	justify-items: center;
 	align-items: center;
 }
+#sign-form {
+	align-self: flex-start;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
 
 .login-form-field::placeholder {
 	color: #3a3a3a;
@@ -627,6 +633,20 @@ h2,h3,h4 {
 	cursor: pointer;
 	outline: none;
 }
+
+#sign-form-submit {
+	width: 150px;
+	padding: 7px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: #3a3a3a;
+	cursor: pointer;
+	outline: none;
+}
+
+
 
 
 
