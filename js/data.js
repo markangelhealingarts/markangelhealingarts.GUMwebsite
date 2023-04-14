@@ -43,4 +43,6 @@ loginButton.addEventListener("click", (e) => {
     }else{
       alert("wrong");
     }
-})
+
+// attempt to switch navbar to logged in nav bar when logged in
+
