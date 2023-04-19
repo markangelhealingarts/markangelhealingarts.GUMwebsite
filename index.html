@@ -21,7 +21,7 @@
 
 
 <body>
-
+    
     <div class="navbar">
         <a href="#" class="toggle-button">
             <span class="bar"></span>
@@ -43,6 +43,8 @@
             </ul>
         </div>
     </div>
+
+    <div class="alert"></div>
 
     <div class="container">
         <div id="intro-video">
@@ -146,8 +148,49 @@
             <a href="/" target="_blank"><img src="img/google-play-badge.png" alt="Google play badge" id="googleplay-icon"></a>
             <a href="/" target="_blank"><img src="img/applestore.png" id="apple-icon"></a>
         </div>
+
     </div>
 
+    <script>        
+        function getTime() {
+            let current = new Date();
+            let hour = current.getHours();
+            let minute = current.getMinutes();
+
+            console.log(current);
+
+            if (hour == 9 || hour == 10 || hour == 11 || 
+                hour == 2 || hour == 3 || hour == 4) {
+                alert("Here is your hourly reminder to Get Up and Move!");
+            }
+
+            // if (minute == 23) {
+            //     document.querySelector(".alert").innerHTML = 
+            //     `
+            //     <span class="closebtn" onclick="this.parentElement.style.display='none';" style="margin-left: 10px; background-color: orange; color: black; border-radius: 10px; padding: 10px;">&times;</span>
+                    
+            //     <span style="margin-left: 10px; margin-right: 50px; background-color: orange; color: black; border-radius: 10px; padding: 10px;">Here is your hourly reminder to Get Up and Move!</span>   
+
+            //     <br> 
+            //     `
+            // } 
+            
+            // if (minute == 44) {
+            //     if (confirm("GET UP AND MOVE")) {
+            //         clearInterval(myInterval);
+            //     }     
+            // }
+            // if (minute == 45) {
+            //     if (confirm("GET UP AND MOVE")) {
+            //         clearInterval(myInterval);
+            //     }     
+            // }
+        }
+        
+        myInterval = setInterval(getTime, 1000);
+        // clearInterval(myInterval);
+
+    </script>
 </body>
 
 </html>

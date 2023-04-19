@@ -45,3 +45,4 @@ loginButton.addEventListener("click", (e) => {
     }
 })
 
+setTimeout( function ( ) { alert( "moo" ); }, 10000 ); //displays msg in 10 seconds
