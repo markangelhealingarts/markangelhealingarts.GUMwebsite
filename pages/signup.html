@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="icon" href="../img/newLogoNoText.png">
-    <title>Get Up and Move! Profile</title>
+    <title>Get Up and Move!</title>
     <link rel='stylesheet' type='text/css' href='../css/app.css'>
 	<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
@@ -19,8 +19,8 @@
             <span class="bar"></span>
         </a>
         <div id="logo">
-            <a href="index.html"><img src="../img/newLogoNoText.png" width="50px" height="50px" /></a>
-            <a href="index.html" class="navbar-brand" id="titlenav">Get Up and Move</a>
+            <a href="../index.html"><img src="../img/newLogoNoText.png" width="50px" height="50px" /></a>
+            <a href="../index.html" class="navbar-brand" id="titlenav">Get Up and Move</a>
         </div>
         <div id="header-link">
             <ul>
@@ -29,7 +29,24 @@
                 <li><a href="tidbits.html">Tidbits</a></li>
                 <li><a href="https://www.markangelhealingarts.com/" target="_blank">Healing Arts Site</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log in</a></li>
             </ul>
         </div>
     </div>
+
+    <div>
+        <h1>Sign Up</h1><br><br>
+        <form id="sign-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"><br>
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"><br>
+            <input type="password" name="password2" id="password-field" class="login-form-field" placeholder="Confirm Password"><br>
+            <input type="submit" value="Sign Up" id="sign-form-submit">
+        </form><br><br>
+        
+    </div>
+
+    <script type="module" src='../js/signup.js'></script>
+</body>
+
+
+<!--</body>-->
+</html>
