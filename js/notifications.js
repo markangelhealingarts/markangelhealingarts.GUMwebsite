@@ -14,6 +14,10 @@ const firebaseConfig = {
   measurementId: "G-K88BJV87S3"
 };
 
+if(localStorage.getItem("logged")) {
+  getTime();
+}
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
