@@ -26,19 +26,20 @@ const signButton = document.getElementById("sign-form-submit");
 
 signButton.addEventListener("click", async (e) => {
     e.preventDefault();
+    let ifRight = true;
     const username = signForm.username.value;
     const password = signForm.password.value;
     const password2 = signForm.password2.value;
 
     if(password != password2){
         alert('passwords are different');
-        return
+        ifRight = false
     }
 
     querySnapshot.forEach((doc) => {
       if(`${doc.id}` == username){
         alert('acount already exists')
-        return
+        ifRight = false
       }
     });
 
@@ -51,9 +52,11 @@ signButton.addEventListener("click", async (e) => {
     // }catch{
     //     console.log('error')
     // }
-    await setDoc(doc(db, "Users", username), {
+    if(ifRight){
+      await setDoc(doc(db, "Users", username), {
         Password: password
-    });
-    alert('success signed up!')
-    window.location = '/pages/login.html';
+      });
+      alert('success signed up!')
+      window.location = '/pages/login.html';
+    }
 })

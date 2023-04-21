@@ -19,6 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+
 const querySnapshot = await getDocs(collection(db, "Users"));
 
 const loginForm = document.getElementById("login-form");
@@ -41,9 +42,15 @@ loginButton.addEventListener("click", (e) => {
 
     if(login){
       window.location = '/';
+
+      localStorage.setItem('username', username);
+      localStorage.setItem('password', password);
+      localStorage.setItem('logged', true)
     }else{
       alert("wrong");
     }
+
+
 })
 
 
