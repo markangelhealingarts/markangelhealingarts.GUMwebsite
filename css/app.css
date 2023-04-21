@@ -36,13 +36,22 @@ ul {
 	align-items: center;
 }
 
-#header-link ul {
+.navi_ul{
 	margin: 0;
 	padding: 0;
 	display: flex;
 }
 
-#header-link li a {
+.navi{
+	font-size: 15px;
+	text-decoration: none;
+	color: #000;
+	margin: 20px;
+	padding: 5px;
+	display: block;
+}
+
+.navi_text{
 	font-size: 15px;
 	text-decoration: none;
 	color: #000;
@@ -68,11 +77,6 @@ li:last-child {
 	right: 0;
 }
 
-#header-link ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
 
 /* .toggle-button {
 	position: absolute;
@@ -602,6 +606,12 @@ h2,h3,h4 {
 	justify-items: center;
 	align-items: center;
 }
+#sign-form {
+	align-self: flex-start;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
 
 .login-form-field::placeholder {
 	color: #3a3a3a;
@@ -627,6 +637,62 @@ h2,h3,h4 {
 	cursor: pointer;
 	outline: none;
 }
+
+#sign-form-submit {
+	width: 150px;
+	padding: 7px;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	background-color: #3a3a3a;
+	cursor: pointer;
+	outline: none;
+}
+
+.user_text{
+	font-size: 15px;
+	text-decoration: none;
+	color: #000;
+	margin: 20px;
+	padding: 5px;
+	display: block;
+	margin-top: 46px;
+	cursor: pointer;
+}
+
+.user_text:hover{
+	font-size: 15px;
+    color: #e8f5fe;
+    text-decoration: none;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
 
 
 
