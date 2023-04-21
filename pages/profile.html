@@ -1,14 +1,107 @@
-<%- include("views/partials/navBar.ejs") %>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="img/newLogoNoText.png">
+    <title>Get Up and Move!</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+    
+<body>
+    <div class="navbar navbar-expand-lg navbar-fixed-top">
+        <div id="logo">
+            <a href="../index.html"><img src="../img/newLogoNoText.png" width="50px" height="50px" /></a>
+            <a href="../index.html" class="navbar-brand" id="titlenav">Get Up and Move</a>
+        </div>
+        <div id="header-link">
+            <ul class="navbar-nav mr-auto">
+                <li><a href="../index.html" class="links">Home</a></li>
+                <li><a href="activities.html" class="links">Start Moving</a></li>
+                <li><a href="tidbits.html" class="links">Tidbits</a></li>
+                <li><a href="https://www.markangelhealingarts.com/" target="_blank" class="links">Healing Arts Site</a></li>
+                <li><a href="contact.html" class="links">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </div>
+    </div>
  
- 
+    <!-- insert username/email information and output it -->
+    <h1>Username: </h1><br>
+    <!-- insert username from login -->
+    <h1>Longevity Points: </h1><br>
+    <!-- insert points from database based on log in info -->
+    <h1>Schedule for 9am-5pm jobs</h1>
+    <!-- insert the schedule place holder 9am, 10am , 11a, 2pm, 3ppm, 4pm -->
+    <h1>
+    <button type="button" class="btn btn-primary">9:00am</button>
+    <button type="button" class="btn btn-primary">10:00am</button>
+    <button type="button" class="btn btn-primary">11:00am</button><br>
+    <button type="button" class="btn btn-primary">2:00pm</button>
+    <button type="button" class="btn btn-primary">3:00pm</button>
+    <button type="button" class="btn btn-primary">4:00pm</button><br>
+    <a href="activities.html" class="btn btn-success" role="button">Start Moving</a>
+    </h1>
+    <!-- Start Moving button  -->
 
-<!-- insert username/email information and output it -->
-<p>Longevity Points:</p>
-<!-- insert information of Points -->
-<!-- Update schedule placeholder -->
 
 
 
 
 
-<%- include("views/partials/footer.ejs") %>
+
+
+
+
+
+
+<div class="navbar navbar-expand-lg navbar-fixed-bottom" id="footer">
+    <div id="videos-container">
+        <div class="video-section-container">
+            <b>Easy Guiding Videos</b>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=HLVORLKgbG0" target="_blank" class="class-links">Level 1: Session 1</a></li>
+                <li><a href="https://www.youtube.com/watch?v=khRNGR_nRZM" target="_blank" class="class-links">Level 1: Session 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0jBrAwQxxFo" target="_blank" class="class-links">Level 1: Session 3</a></li>
+                <li><a href="https://www.youtube.com/watch?v=woWyNX5kyDA" target="_blank" class="class-links">Level 1: Session 4</a></li>
+                <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 1: Session 5</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 1: Session 6</a></li>
+            </ul>
+        </div>
+        <div class="video-section-container">
+            <b>Moderate Guiding Videos</b>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=3zb7Nh_Upls" target="_blank" class="class-links">Level 2: Session 1</a></li>
+                <li><a href="https://www.youtube.com/watch?v=-ajQ8ddWrUg" target="_blank" class="class-links">Level 2: Session 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=L_NQy0bInok" target="_blank" class="class-links">Level 2: Session 3</a></li>
+                <li><a href="https://www.youtube.com/watch?v=kwiHORsMBcc" target="_blank" class="class-links">Level 2: Session 4</a></li>
+                <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 2: Session 5</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 2: Session 6</a></li>
+            </ul>
+        </div>
+        <div class="video-section-container">
+            <b>Vigorous Guiding Videos</b>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=JGrCYKVN8tA" target="_blank" class="class-links">Level 3: Session 1</a></li>
+                <li><a href="https://www.youtube.com/watch?v=51S_NKY7qnU" target="_blank" class="class-links">Level 3: Session 2</a></li>
+                <li><a href="https://www.youtube.com/watch?v=bOMWbFV8ae8" target="_blank" class="class-links">Level 3: Session 3</a></li>
+                <li><a href="https://www.youtube.com/watch?v=agAZzVkEjVk" target="_blank" class="class-links">Level 3: Session 4</a></li>
+                <li><a href="https://www.youtube.com/watch?v=1zUxn6P6cGE" target="_blank" class="class-links">Level 3: Session 5</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4mPcd83f1ws" target="_blank" class="class-links">Level 3: Session 6</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div id="app-icons">
+        <a href="/" target="_blank"><img src="../img/google-play-badge.png" alt="Google play badge" id="googleplay-icon"></a>
+        <a href="/" target="_blank"><img src="../img/applestore.png" id="apple-icon"></a>
+    </div>
+</div>
+</body>
+
+</html>
