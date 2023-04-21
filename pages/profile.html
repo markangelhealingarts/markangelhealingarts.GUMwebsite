@@ -20,21 +20,20 @@
             <a href="../index.html" class="navbar-brand" id="titlenav">Get Up and Move</a>
         </div>
         <div id="header-link">
-            <ul class="navbar-nav mr-auto">
-                <li><a href="../index.html" class="links">Home</a></li>
-                <li><a href="activities.html" class="links">Start Moving</a></li>
-                <li><a href="tidbits.html" class="links">Tidbits</a></li>
-                <li><a href="https://www.markangelhealingarts.com/" target="_blank" class="links">Healing Arts Site</a></li>
-                <li><a href="contact.html" class="links">Contact</a></li>
-                <li><a href="login.html">Log in</a></li>
+            <ul class="navi_ul">
+                <li class="navi"><a class='navi_text'href="../index.html">Home</a></li>
+                <li class="navi"><a class='navi_text' href="activities.html">Start Moving</a></li>
+                <li class="navi"><a class='navi_text' href="tidbits.html">Tidbits</a></li>
+                <li class="navi"><a class='navi_text' href="https://www.markangelhealingarts.com/" target="_blank">Healing Arts Site</a></li>
+                <li class="navi"><a class='navi_text' href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
  
     <!-- insert username/email information and output it -->
-    <h1>Username: </h1><br>
+    <h1 id="profile_username">Username: </h1><br>
     <!-- insert username from login -->
-    <h1>Longevity Points: </h1><br>
+    <h1 id="profile_points">Longevity Points: </h1><br>
     <!-- insert points from database based on log in info -->
     <h1>Schedule for 9am-5pm jobs</h1>
     <!-- insert the schedule place holder 9am, 10am , 11a, 2pm, 3ppm, 4pm -->
@@ -45,7 +44,8 @@
     <button type="button" class="btn btn-primary">2:00pm</button>
     <button type="button" class="btn btn-primary">3:00pm</button>
     <button type="button" class="btn btn-primary">4:00pm</button><br>
-    <a href="activities.html" class="btn btn-success" role="button">Start Moving</a>
+    <a href="activities.html" class="btn btn-success" role="button">Start Moving</a><br><br>
+    <a href="/" class="btn btn-danger" id='logout_button'role="button">Log out</a>
     </h1>
     <!-- Start Moving button  -->
 
@@ -102,6 +102,7 @@
         <a href="/" target="_blank"><img src="../img/applestore.png" id="apple-icon"></a>
     </div>
 </div>
+<script src="../js/profile.js"></script>
 </body>
 
 </html>

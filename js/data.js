@@ -27,7 +27,7 @@ const loginButton = document.getElementById("login-form-submit");
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
-    const password = loginForm.password.value;
+    const password = loginForm.password.value
 
     let login = false;
 
@@ -35,6 +35,7 @@ loginButton.addEventListener("click", (e) => {
       if(`${doc.id}` == username){
         if(`${doc.data().Password}` == password){
           login = true;
+          localStorage.setItem('points', doc.data().Points)
         }
       }
     });
