@@ -44,8 +44,6 @@
         </div>
     </div>
 
-    <div class="alert"></div>
-
     <div class="container">
         <div id="intro-video">
             <iframe src="https://www.youtube.com/embed/frFlcZ1Xnno" id="video"></iframe>
@@ -151,46 +149,38 @@
 
     </div>
 
-    <script>        
+    <!-- <script>    
+        function getAlert() {
+            alert("Here is your hourly reminder to Get Up and Move!");
+            getTime();
+        }    
         function getTime() {
             let current = new Date();
             let hour = current.getHours();
             let minute = current.getMinutes();
+            let second = current.getSeconds();
 
             console.log(current);
 
-            if (hour == 9 || hour == 10 || hour == 11 || 
+            if ((minute == '00') && (second == '00')) {
+                if (hour == 9 || hour == 10 || hour == 11 || 
                 hour == 2 || hour == 3 || hour == 4) {
-                alert("Here is your hourly reminder to Get Up and Move!");
+                    getAlert();
+                }
+            } else {
+                setTimeout(getAlert,(60*(60-minute)+(60-second))*1000);
             }
 
-            // if (minute == 23) {
-            //     document.querySelector(".alert").innerHTML = 
-            //     `
-            //     <span class="closebtn" onclick="this.parentElement.style.display='none';" style="margin-left: 10px; background-color: orange; color: black; border-radius: 10px; padding: 10px;">&times;</span>
-                    
-            //     <span style="margin-left: 10px; margin-right: 50px; background-color: orange; color: black; border-radius: 10px; padding: 10px;">Here is your hourly reminder to Get Up and Move!</span>   
-
-            //     <br> 
-            //     `
-            // } 
-            
-            // if (minute == 44) {
-            //     if (confirm("GET UP AND MOVE")) {
-            //         clearInterval(myInterval);
-            //     }     
-            // }
-            // if (minute == 45) {
-            //     if (confirm("GET UP AND MOVE")) {
-            //         clearInterval(myInterval);
-            //     }     
+            // if ((second == '00')) {
+            //     getAlert();
+            // } else {
+            //     setTimeout(getAlert,(60*(60-minute)+(60-second))*1000);
             // }
         }
         
         myInterval = setInterval(getTime, 1000);
-        // clearInterval(myInterval);
 
-    </script>
+    </script> -->
 </body>
 
 </html>
