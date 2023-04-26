@@ -13,15 +13,15 @@ function getTime() {
   let minute = current.getMinutes();
   let second = current.getSeconds();
 
-  console.log(current);
+  // console.log(current);
 
-  if ((minute == '00') && (second == '00')) {
+  if ((minute == '10') && (second == '00')) {
       if (hour == 9 || hour == 10 || hour == 11 || 
-      hour == 14 || hour == 15 || hour == 16) {
+      hour == 13 || hour == 15 || hour == 16) {
           getAlert();
       }
-  } else {
-      setTimeout(getAlert,(60*(60-minute)+(60-second))*1000);
+  // } else {
+  //     setTimeout(getAlert,(60*(60-minute)+(60-second))*1000);
   }
 
   // if ((second == '00')) {
@@ -31,4 +31,4 @@ function getTime() {
   // }
 }
 
-myInterval = setInterval(getTime, 1000); //displays msg in 10 seconds
+myInterval = setInterval(getTime, 1000); //displays msg in 1 seconds
