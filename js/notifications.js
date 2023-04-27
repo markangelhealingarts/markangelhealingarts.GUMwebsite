@@ -15,9 +15,9 @@ function getTime() {
 
   // console.log(current);
 
-  if ((minute == '10') && (second == '00')) {
+  if ((minute == '00') && (second == '00')) {
       if (hour == 9 || hour == 10 || hour == 11 || 
-      hour == 13 || hour == 15 || hour == 16) {
+      hour == 14 || hour == 15 || hour == 16) {
           getAlert();
       }
   // } else {
